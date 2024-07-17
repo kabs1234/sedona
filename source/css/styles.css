@@ -1,0 +1,429 @@
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: local("PT Sans"), local("PT Sans Regular"), url("../fonts/PTSans-Regular.woff2") format(woff2), url("../fonts/PTSans-Regular.woff") format(woff);
+}
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: local("PT Sans"), local("PT Sans Bold"), url("../fonts/PTSans-Bold.woff2") format(woff2), url("../fonts/PTSans-Bold.woff") format(woff);
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  width: 280px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.nav {
+  position: relative;
+  display: flex;
+}
+
+.nav__logo {
+  margin-left: 89px;
+}
+
+.nav__button {
+  position: relative;
+  width: 23px;
+  height: 22px;
+  margin: 17px 0;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  z-index: 1;
+}
+.nav__button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 23px;
+  height: 4px;
+  background-color: #81B3D2;
+  box-shadow: 0 9px 0 0 #81B3D2, 0 18px 0 0 #81B3D2;
+}
+
+.nav__button--close {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  margin: 0;
+}
+.nav__button--close::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: -3px;
+  width: 27px;
+  height: 3px;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+}
+.nav__button--close::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: -2px;
+  width: 27px;
+  height: 3px;
+  background-color: #ffffff;
+  transform: rotate(-45deg);
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  display: none;
+  list-style-type: none;
+}
+.nav__list--active {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__item:not(:first-child) .nav__link {
+  box-shadow: 0px -1px 0px 0px rgba(1, 1, 1, 0.2), 0px 1px 0px 0px rgba(255, 255, 255, 0.2) inset;
+}
+
+.nav__link {
+  width: 320px;
+  padding: 10px 0 5px;
+  background-color: #81B3D2;
+  display: block;
+  font-family: PT Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main {
+  margin-top: -28px;
+}
+
+.main__promo {
+  background: url("../../images/intro-triangle.svg") no-repeat 0 332px, url("../../images/text-index.svg") no-repeat 19px 90px, url("../../images/background-mountains.png") no-repeat -290px 0;
+  min-height: 389px;
+}
+
+.main__heading {
+  margin: 32px 0;
+  font-family: PT Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main__description {
+  margin: 0;
+  margin-bottom: 27px;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantage {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 26px;
+  background-color: #EEEEEE;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.advantage::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  width: 280px;
+  height: 1px;
+  background-color: #D6D6D6;
+}
+
+.advantage:last-of-type::after {
+  content: none;
+}
+
+.advantage--town, .advantage--bridge {
+  margin: 0;
+  padding-bottom: 0;
+  border: none;
+  background-color: #81B3D2;
+  color: #ffffff;
+}
+.advantage--town::after, .advantage--bridge::after {
+  content: none;
+}
+
+.advantage--town {
+  padding-top: 55px;
+  margin-bottom: 35px;
+}
+.advantage--town::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 320px;
+  height: 37px;
+  background: transparent url("../../images/stripe.svg") no-repeat 0 -16px;
+}
+
+.advantage--bridge {
+  padding-top: 39px;
+}
+
+.advantage--town .advantage__description {
+  padding-bottom: 39px;
+}
+
+.advantage--bridge .advantage__description {
+  padding-bottom: 35px;
+}
+
+.advantage__name {
+  margin: 0;
+  margin-bottom: 12px;
+  font-family: PT Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantage__number {
+  margin: 0;
+  margin-bottom: 16px;
+  display: block;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantage__description {
+  margin: 0;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantage__background {
+  min-height: 260px;
+}
+
+.advantage--town .advantage__background {
+  background: url("../../images/photo-city.jpg") no-repeat;
+}
+
+.advantage--bridge .advantage__background {
+  background: url("../../images/photo-bridge.png") no-repeat;
+}
+
+.advantages__info {
+  margin: 0 20px;
+  margin-left: 69px;
+  margin-bottom: 35px;
+}
+
+.info__wrapper {
+  position: relative;
+}
+.info__wrapper:not(:last-child) {
+  margin-bottom: 26px;
+}
+
+.info__wrapper--home::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: -48px;
+  width: 39px;
+  height: 37px;
+  background: url("../../images/home.svg") no-repeat;
+}
+
+.info__wrapper--souvenirs::before {
+  content: "";
+  position: absolute;
+  top: -11px;
+  left: -44px;
+  width: 32px;
+  height: 38px;
+  background: url("../../images/souvenirs.svg") no-repeat;
+}
+
+.info__wrapper--food::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -51px;
+  width: 40px;
+  height: 35px;
+  background: url("../../images/food.svg") no-repeat;
+}
+
+.info__heading {
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: PT Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.info__message {
+  margin: 0;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.booking {
+  margin: 0 20px;
+  margin-top: 33px;
+  margin-bottom: 49px;
+}
+
+.booking__heading {
+  margin: 0;
+  margin-bottom: 22px;
+  font-family: PT Sans;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.booking__description {
+  margin-bottom: 27px;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.booking__link {
+  padding: 14.5px 32px 17.5px;
+  background-color: #81B3D2;
+  display: block;
+  font-family: PT Sans;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer__map {
+  width: 320px;
+  height: 350px;
+  margin-bottom: 38.5px;
+}
+
+.footer__heading {
+  margin-bottom: 33.5px;
+  display: block;
+  font-family: PT Sans;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.socials {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin-bottom: 40px;
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 6px;
+}
+
+.socials__link {
+  width: 46px;
+  height: 48px;
+  background-color: #81B3D2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.copyright__text {
+  margin-right: 12px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,109 @@
+.advantage {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 26px;
+  background-color: #EEEEEE;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    width: 280px;
+    height: 1px;
+    background-color: #D6D6D6;
+  }
+}
+
+.advantage:last-of-type {
+  &::after {
+    content: none;
+  }
+}
+
+.advantage--town, .advantage--bridge {
+  margin: 0;
+  padding-bottom: 0;
+  border: none;
+  background-color: #81B3D2;
+  color: $white;
+
+  &::after {
+    content: none;
+  }
+}
+
+.advantage--town {
+  padding-top: 55px;
+  margin-bottom: 35px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 37px;
+    background: transparent url('../../images/stripe.svg') no-repeat 0 -16px;
+  }
+}
+
+.advantage--bridge {
+  padding-top: 39px;
+}
+
+.advantage--town .advantage__description {
+  padding-bottom: 39px;
+}
+
+.advantage--bridge .advantage__description {
+  padding-bottom: 35px;
+}
+
+.advantage__name {
+  margin: 0;
+  margin-bottom: 12px;
+  font-family: PT Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantage__number {
+  margin: 0;
+  margin-bottom: 16px;
+  display: block;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantage__description {
+  margin: 0;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantage__background {
+  min-height: 260px;
+}
+
+.advantage--town .advantage__background {
+  background: url("../../images/photo-city.jpg") no-repeat;
+}
+
+.advantage--bridge .advantage__background {
+  background: url("../../images/photo-bridge.png") no-repeat;
+}

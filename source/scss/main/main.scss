@@ -1,0 +1,32 @@
+.main {
+  margin-top: -28px;
+}
+
+.main__promo {
+  background:
+    url('../../images/intro-triangle.svg') no-repeat 0 332px,
+    url('../../images/text-index.svg') no-repeat 19px 90px,
+    url('../../images/background-mountains.png') no-repeat -290px 0;
+  min-height: 389px;
+}
+
+.main__heading {
+  margin: 32px 0;
+  font-family: PT Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main__description {
+  margin: 0;
+  margin-bottom: 27px;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}

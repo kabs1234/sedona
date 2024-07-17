@@ -1,0 +1,23 @@
+.socials {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin-bottom: 40px;
+}
+
+.socials__item {
+  &:not(:last-child) {
+    margin-right: 6px;
+  }
+}
+
+.socials__link {
+  width: 46px;
+  height: 48px;
+  background-color: #81B3D2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

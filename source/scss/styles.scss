@@ -1,3 +1,20 @@
-body {
-  background-color: black;
-}
+@import "./global.scss";
+@import "./_variables.scss";
+
+// header
+
+@import "./header/header.scss";
+@import "./header/nav.scss";
+
+// main
+
+@import "./main/main.scss";
+@import "./main/advantages.scss";
+@import "./main/info.scss";
+@import "./main/booking.scss";
+
+// footer
+
+@import "./footer/footer.scss";
+@import "./footer/socials.scss";
+@import "./footer/copyright.scss";
