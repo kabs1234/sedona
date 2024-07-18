@@ -1,0 +1,53 @@
+.photos {
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
+  padding-top: 22px;
+  list-style-type: none;
+  border-bottom: 1px solid #E5E5E5;
+  border-top: 1px solid #E5E5E5;
+}
+
+.photo {
+  position: relative;
+  padding: 0 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #E5E5E5;
+  background: url('../../images/like.svg') no-repeat 20px 352px;
+
+  &:not(:first-child) {
+    padding-top: 22px;
+    background: url('../../images/like.svg') no-repeat 20px 372px;
+  }
+}
+
+.photo__image {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.photo__name {
+  margin: 0;
+  margin-bottom: -14px;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.photo__author {
+  font-family: PT Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.photo__likes {
+  margin-left: 37px;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}

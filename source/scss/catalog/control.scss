@@ -1,0 +1,64 @@
+.control {
+  position: relative;
+}
+
+.control__bar {
+  position: absolute;
+  bottom: 64px;
+  right: 0;
+  width: 280px;
+  min-height: 45px;
+  margin: 0 20px;
+  background-color: rgba($color: $black, $alpha: 0.6);
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 235px;
+    height: 3px;
+    top: 22px;
+    left: 22px;
+    background-color: rgba($color: $white, $alpha: 0.2);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 19px;
+    left: 58px;
+    width: 9px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $white;
+  }
+}
+
+.control__panel {
+  margin: 0 20px;
+  margin-top: -5px;
+  padding: 13px;
+  display: flex;
+  background-color: #F2F2F2;
+}
+
+.control__button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+
+  &--replay {
+    margin-right: 116px;
+    background: url('../../images/replay.svg') no-repeat center;
+  }
+
+  &--subtitles {
+    margin-right: auto;
+    background: url('../../images/subtitles.svg') no-repeat center;
+
+  }
+
+  &--fullscreen {
+    background: url('../../images/fullscreen.svg') no-repeat center;
+  }
+}
