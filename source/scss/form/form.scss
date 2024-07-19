@@ -1,0 +1,55 @@
+.form {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 76px;
+}
+
+.form-page {
+  margin-top: -28px;
+}
+
+.form-page__promo {
+  min-height: 158px;
+  margin-bottom: 36px;
+  background:
+    url('../../images/intro-triangle.svg') no-repeat 0px 102px,
+    url('../../images/sedona-mobile.svg') no-repeat 45px 52px,
+    url('../../images/back-catalog.jpg') no-repeat 0 -56px;
+}
+
+.form-page__heading {
+  margin: 0;
+  margin-bottom: 29px;
+  font-family: PT Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form-page__description {
+  margin: 0;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #E5E5E5;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form__submit-button {
+  min-width: 280px;
+  padding: 18.5px 0 13.5px;
+  border: none;
+  background-color: #81B3D2;
+  font-family: PT Sans;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+}

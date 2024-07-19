@@ -1,0 +1,61 @@
+.fieldset--visits .field {
+  position: relative;
+  display: flex;
+  font-family: PT Sans;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.fieldset--visits .fieldset__item {
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+.fieldset--visits .field__input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.fieldset--visits .field__name {
+  margin-top: 17px;
+  margin-left: 15px;
+  order: 1;
+  font-family: PT Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  text-transform: none;
+}
+
+.fieldset--visits .field__span {
+  order: 0;
+}
+
+.fieldset--visits .field__span {
+  position: relative;
+  top: 2px;
+  left: -8px;
+  width: 55px;
+  height: 55px;
+  background-color: #F2F2F2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 17px;
+    background: url('../../../images/tick.svg') no-repeat;
+    opacity: 0;
+  }
+}
+
+.fieldset--visits .field__input:checked ~ .field__span::before {
+  opacity: 1;
+}

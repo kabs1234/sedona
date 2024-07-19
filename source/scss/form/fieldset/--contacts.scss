@@ -1,0 +1,52 @@
+.fieldset--contacts {
+  padding-bottom: 28px;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.fieldset--contacts .fieldset__item {
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}
+
+.fieldset--contacts .fieldset__wrapper {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 58px;
+    height: 58px;
+    background-color: #e6e6e6;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.fieldset--contacts .fieldset__item:first-child .fieldset__wrapper::after{
+  background-image: url("../../../images/phone.svg");
+}
+
+.fieldset--contacts .fieldset__item:nth-child(2) .fieldset__wrapper::after{
+  background-image: url("../../../images/mail.svg");
+}
+
+.fieldset--contacts .field {
+  margin-left: 22px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.fieldset--contacts .fieldset__item:nth-child(2) .field {
+  margin-bottom: 5px;
+}
+
+.fieldset--contacts .field__input {
+  width: 280px;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
