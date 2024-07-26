@@ -1,5 +1,10 @@
 .footer {
   margin-top: auto;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .footer__heading {
@@ -11,4 +16,9 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    margin-right: auto;
+    margin-left: 60px;
+  }
 }

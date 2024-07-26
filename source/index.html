@@ -9,92 +9,140 @@
   <body class="page">
     <header class="header">
       <nav class="nav">
-        <img src="./images/logotype-mobile.svg" alt="Лого" class="nav__logo" width="102" height="84">
-        <button class="nav__button">
-          <span class="visually-hidden">Открыть меню навигации</span>
-        </button>
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="">Главная</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="">Фото и видео</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="">Форма Отзыва</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="">Html academy</a>
-          </li>
-        </ul>
+        <div class="nav__mobile">
+          <a href="index.html" class="nav__main-link">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./images/content/logotype-desktop.svg">
+              <source media="(min-width: 768px)" srcset="./images/content/logotype-tablet.svg">
+              <img src="./images/content/logotype-mobile.svg" alt="Лого" class="nav__logo" width="102" height="84">
+            </picture>
+          </a>
+
+          <button class="nav__button">
+            <span class="visually-hidden">Открыть меню навигации</span>
+          </button>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Фото и видео</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Форма Отзыва</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Html academy</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__tablet">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Фото и видео</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images/content/logotype-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="./images/content/logotype-tablet.svg">
+                  <img src="./images/content/logotype-mobile.svg" alt="Лого" class="nav__logo" width="102" height="84">
+                </picture>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Форма Отзыва</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Html academy</a>
+            </li>
+          </ul>
+        </div>
+
       </nav>
     </header>
 
     <main class="page__main main">
       <div class="main__promo"></div>
 
-      <h1 class="main__heading">СЕДОНА — небольшой<br> городок в АРИЗОНЕ, заслуживающий большего!</h1>
+      <h1 class="main__heading">СЕДОНА — небольшой<br class="main__mobile"> городок в АРИЗОНЕ,<br class="main__tablet"> заслуживающий большего!</h1>
       <p class="main__description">Рассмотрим 5 причин, по которым<br> Седона круче, чем гранд каньон!</p>
 
       <section class="advantages">
-        <div class="advantages__card advantage advantage--town">
-          <p class="advantage__name">Настоящий городок</p>
-          <span class="advantage__number">— №1 —</span>
-          <p class="advantage__description">Cедона не аттракцион для туристов,<br> там течет своя жизнь</p>
-          <div class="advantage__background"></div>
-        </div>
+        <ol class="advantages__list">
+          <li class="advantages__item advantage">
+            <div class="advantage__wrapper advantage--blue">
+              <p class="advantage__name">Настоящий городок</p>
+              <span class="advantage__number">— №1 —</span>
+              <p class="advantage__description">Cедона не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./images/content/photo-city-desktop@1x.jpg 1x, ./images/content/photo-city-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./images/content/photo-city-tablet@1x.jpg 1x, ./images/content/photo-city-tablet@2x.jpg 2x">
+              <img class="advantage__image" src="./images/content/photo-city-mobile@1x.jpg" width="320" height="260" alt="Фото города" srcset="./images/content/photo-city-mobile@2x.jpg 2x">
+            </picture>
 
-        <div class="advantages__info info">
-          <div class="info__wrapper info__wrapper--home">
-            <p class="info__heading">Жилье</p>
-            <p class="info__message">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-          </div>
+            <ul class="advantage__list info">
+              <li class="info__item">
+                <p class="info__heading">Жилье</p>
+                <p class="info__message">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </li>
+              <li class="info__item">
+                <p class="info__heading">СУВЕНИРЫ</p>
+                <p class="info__message">Не только китайского, но и местного производства!</p>
+              </li>
+              <li class="info__item">
+                <p class="info__heading">ЕДА</p>
+                <p class="info__message">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+              </li>
+            </ul>
+          </li>
 
-          <div class="info__wrapper info__wrapper--souvenirs">
-            <p class="info__heading">СУВЕНИРЫ</p>
-            <p class="info__message">Не только китайского, но и местного производства!</p>
-          </div>
+          <li class="advantages__item advantage">
+            <div class="advantage__wrapper advantage--blue">
+              <p class="advantage__name">ТАМ ЕСТЬ<br> Мост дьявола</p>
+              <span class="advantage__number">— №2 —</span>
+              <p class="advantage__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./images/content/photo-bridge-desktop@1x.jpg 1x, ./images/content/photo-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./images/content/photo-bridge-tablet@1x.jpg 1x, ./images/content/photo-bridge-tablet@2x.jpg 2x">
+              <img class="advantage__image" src="./images/content/photo-bridge-mobile@1x.jpg" srcset="./images/content/photo-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Фото города">
+            </picture>
+          </li>
 
-          <div class="info__wrapper info__wrapper--food">
-            <p class="info__heading">ЕДА</p>
-            <p class="info__message">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
-          </div>
-        </div>
+          <li class="advantages__item advantage">
+            <p class="advantage__name">НЕБОЛЬШАЯ ПЛОЩАДЬ</p>
+            <span class="advantage__number">— №3 —</span>
+            <p class="advantage__description">ВСЕ интересные места находятся очень близко</p>
+          </li>
 
-        <div class="advantages__card advantage advantage--bridge">
-          <p class="advantage__name">ТАМ ЕСТЬ Мост дьявола</p>
-          <span class="advantage__number">— №2 —</span>
-          <p class="advantage__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-          <div class="advantage__background"></div>
-        </div>
+          <li class="advantages__item advantage">
+            <p class="advantage__name">КРАСИВАЯ<br> ДОРОГА</p>
+            <span class="advantage__number">— №4 —</span>
+            <p class="advantage__description">ЕХАТЬ В СЕДОНУ ИЗ<br> ЛАС-ВЕГАСА совсем<br> НЕ СКУЧНО!</p>
+          </li>
 
-        <div class="advantages__card advantage">
-          <p class="advantage__name">НЕБОЛЬШАЯ ПЛОЩАДЬ</p>
-          <span class="advantage__number">— №3 —</span>
-          <p class="advantage__description">ВСЕ интересные места находятся<br> очень близко</p>
-        </div>
-
-        <div class="advantages__card advantage">
-          <p class="advantage__name">КРАСИВАЯ ДОРОГА</p>
-          <span class="advantage__number">— №4 —</span>
-          <p class="advantage__description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА<br> совсем НЕ СКУЧНО!</p>
-        </div>
-
-        <div class="advantages__card advantage">
-          <p class="advantage__name">МАЛО ТУРИСТОВ</p>
-          <span class="advantage__number">— №5 —</span>
-          <p class="advantage__description">Большинство едет в гранд каньон<br> и толпится там</p>
-        </div>
+          <li class="advantages__item advantage">
+            <p class="advantage__name">МАЛО<br> ТУРИСТОВ</p>
+            <span class="advantage__number">— №5 —</span>
+            <p class="advantage__description">Большинство едет в гранд каньон и толпится там</p>
+          </li>
+        </ol>
       </section>
 
       <section class="booking">
         <p class="booking__heading">Заинтересовались?</p>
-        <p class="booking__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <p class="booking__description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <a class="booking__link" href="">НАЙТИ гостиницу</a>
       </section>
 
-      <div class="main__map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.17731020665!2d-111.79513845!3d34.8543784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2skz!4v1721241429535!5m2!1sru!2skz" width="320" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="main__map-wrapper">
+        <iframe class="main__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.17731020665!2d-111.79513845!3d34.8543784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2skz!4v1721241429535!5m2!1sru!2skz" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </main>
 
@@ -104,21 +152,21 @@
       <ul class="footer__socials socials">
         <li class="socials__item">
           <a class="socials__link" href="">
-            <img src="./images/twitter.svg" alt="Твиттер" width="18" height="15">
+            <img src="./images/content/twitter.svg" alt="Твиттер" width="18" height="15">
             <span class="visually-hidden">Twitter</span>
           </a>
         </li>
 
         <li class="socials__item">
           <a class="socials__link" href="">
-            <img src="./images/facebook.svg" alt="Фейсбук" width="9" height="19">
+            <img src="./images/content/facebook.svg" alt="Фейсбук" width="9" height="19">
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
 
         <li class="socials__item">
           <a class="socials__link" href="">
-            <img src="./images/youtube.svg" alt="Ютуб" width="20" height="14">
+            <img src="./images/content/youtube.svg" alt="Ютуб" width="20" height="14">
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>

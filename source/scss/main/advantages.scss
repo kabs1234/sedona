@@ -1,20 +1,24 @@
 .advantage {
   position: relative;
-  padding-top: 25px;
   padding-bottom: 26px;
-  background-color: #EEEEEE;
   display: flex;
   flex-direction: column;
-  text-align: center;
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 20px;
-    width: 280px;
-    height: 1px;
-    background-color: #D6D6D6;
+  @media (min-width: $tablet) {
+    &::after {
+      content: none;
+    }
+  }
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: repeat(3, 256px);
   }
 }
 
@@ -24,7 +28,7 @@
   }
 }
 
-.advantage--town, .advantage--bridge {
+.advantage--blue {
   margin: 0;
   padding-bottom: 0;
   border: none;
@@ -36,32 +40,87 @@
   }
 }
 
-.advantage--town {
-  padding-top: 55px;
-  margin-bottom: 35px;
+.advantage:nth-child(2) {
+  padding-bottom: 0;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 320px;
-    height: 37px;
-    background: transparent url('../../images/stripe.svg') no-repeat 0 -16px;
+  @media (min-width: $tablet) {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
   }
 }
 
-.advantage--bridge {
+.advantage:nth-child(2) .advantage__wrapper {
   padding-top: 39px;
-}
-
-.advantage--town .advantage__description {
-  padding-bottom: 39px;
-}
-
-.advantage--bridge .advantage__description {
   padding-bottom: 35px;
+
+  @media (min-width: $tablet) {
+    padding: 43px 36px 41px;
+    order: 1;
+  }
 }
+
+.advantage:nth-child(2) .advantage__image {
+  @media (min-width: $tablet) {
+    width: 512px;
+    height: 256px;
+    order: 0;
+  }
+}
+
+.advantage:nth-child(n+3):nth-child(-n+5) {
+  padding: 25px 37px;
+  background-color: #EEEEEE;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 320px;
+    height: 1px;
+    background-color: #D6D6D6;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 42px 38px;
+    grid-row: 3/4;
+
+    &::after {
+      content: none;
+    }
+  }
+}
+
+.advantage:nth-child(2) .advantage__number {
+  @media (min-width: $tablet) {
+    margin-bottom: 24px;
+  }
+}
+
+.advantage:nth-child(3) {
+  @media (min-width: $tablet) {
+    padding: 42px 34px 63px 33px;
+    grid-column: 1/2;
+  }
+}
+
+.advantage:nth-child(4) {
+  @media (min-width: $tablet) {
+    padding: 42px 48px 41px 46px;
+    grid-column: 2/3;
+  }
+}
+
+.advantage:last-child {
+  @media (min-width: $tablet) {
+    padding: 42px 40px 42px 41px;
+    grid-column: 3/4;
+  }
+}
+
 
 .advantage__name {
   margin: 0;
@@ -72,6 +131,10 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 21px;
+  }
 }
 
 .advantage__number {
@@ -84,6 +147,10 @@
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 24px;
+  }
 }
 
 .advantage__description {
@@ -96,14 +163,6 @@
   text-transform: uppercase;
 }
 
-.advantage__background {
-  min-height: 260px;
-}
-
-.advantage--town .advantage__background {
-  background: url("../../images/photo-city.jpg") no-repeat;
-}
-
-.advantage--bridge .advantage__background {
-  background: url("../../images/photo-bridge.png") no-repeat;
+.advantage__image {
+  display: block;
 }

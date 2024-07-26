@@ -1,7 +1,11 @@
 .booking {
-  margin: 0 20px;
-  margin-top: 33px;
-  margin-bottom: 49px;
+  padding: 0 20px;
+  padding-top: 33px;
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet) {
+    padding: 58px 155px;
+  }
 }
 
 .booking__heading {
@@ -13,9 +17,15 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 33px;
+    font-size: 30px;
+  }
 }
 
 .booking__description {
+  margin: 0;
   margin-bottom: 27px;
   font-family: PT Sans;
   font-size: 14px;
@@ -23,6 +33,10 @@
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 37px;
+  }
 }
 
 .booking__link {

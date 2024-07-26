@@ -1,0 +1,42 @@
+.nav__tablet .nav__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+.nav__tablet .nav__item {
+  &:first-child {
+    margin-right: 77px;
+  }
+
+  &:nth-child(2) {
+    margin-right: 54px;
+  }
+
+  &:nth-child(3) {
+    margin-right: 54px;
+  }
+
+  &:nth-child(4) {
+    margin-right: 51px;
+  }
+}
+
+.nav__tablet .nav__item:nth-child(3) .nav__link {
+  align-items: start;
+}
+
+.nav__tablet .nav__link {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $black;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}

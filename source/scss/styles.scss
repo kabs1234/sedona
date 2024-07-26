@@ -5,11 +5,14 @@
 
 @import "./header/header.scss";
 @import "./header/nav.scss";
+@import "./header/nav/__mobile.scss";
+@import "./header/nav/__tablet.scss";
 
 // main
 
 @import "./main/main.scss";
 @import "./main/advantages.scss";
+@import "./main/advantage/first-child.scss";
 @import "./main/info.scss";
 @import "./main/booking.scss";
 @import "./catalog/catalog.scss";

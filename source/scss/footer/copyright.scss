@@ -8,6 +8,11 @@
   line-height: 26px;
   text-align: center;
   text-decoration: none;
+
+  @media (min-width: $tablet) {
+    margin-right: 60px;
+    margin-left: 122px;
+  }
 }
 
 .copyright__text {
