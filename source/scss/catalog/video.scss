@@ -1,16 +1,21 @@
 .video {
-  margin-bottom: 79px;
+  margin-bottom: 76px;
 }
 
 .video__heading {
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 28px;
   font-family: PT Sans;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    margin-bottom: 31px;
+  }
 }
 
 .video__text {
@@ -22,6 +27,15 @@
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 80px;
+    padding: 0 155px;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .video__control {

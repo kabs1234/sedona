@@ -1,42 +1,46 @@
+.video__control {
+
+  @media (min-width: $tablet) {
+    margin: 0 60px;
+  }
+}
+
 .control {
   position: relative;
 }
 
-.control__bar {
+.control__time-button {
   position: absolute;
-  bottom: 64px;
-  right: 0;
-  width: 280px;
-  min-height: 45px;
-  margin: 0 20px;
-  background-color: rgba($color: $black, $alpha: 0.6);
+  top: 18px;
+  left: 58px;
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: $white;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 235px;
-    height: 3px;
-    top: 22px;
-    left: 22px;
-    background-color: rgba($color: $white, $alpha: 0.2);
+  @media (min-width: $tablet) {
+    top: -3px;
+    left: 113px;
   }
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 19px;
-    left: 58px;
-    width: 9px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: $white;
+.control__img {
+  position: relative;
+  display: block;
+
+  @media (min-width: $tablet) {
+    min-width: 648px;
+    min-height: 500px;
   }
 }
 
 .control__panel {
   margin: 0 20px;
-  margin-top: -5px;
-  padding: 13px;
+  margin-top: -2px;
+  padding: 16px 13px;
+  padding-bottom: 13px;
   display: flex;
   background-color: #F2F2F2;
 }
@@ -46,19 +50,22 @@
   height: 40px;
   border: none;
   background-color: transparent;
+}
 
-  &--replay {
-    margin-right: 116px;
-    background: url('../../images/decorative/replay.svg') no-repeat center;
-  }
+.control__button--replay {
+  margin-right: 115px;
 
-  &--subtitles {
-    margin-right: auto;
-    background: url('../../images/decorative/subtitles.svg') no-repeat center;
-
-  }
-
-  &--fullscreen {
-    background: url('../../images/decorative/fullscreen.svg') no-repeat center;
+  @media (min-width: $tablet) {
+    margin-right: 38px;
   }
 }
+
+.control__button--subtitles {
+  margin-right: auto;
+
+  @media (min-width: $tablet) {
+    margin-right: 23px;
+  }
+}
+
+

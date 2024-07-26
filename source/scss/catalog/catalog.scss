@@ -1,5 +1,9 @@
 .catalog {
   margin-top: -28px;
+
+  @media (min-width: $tablet) {
+    margin-top: 0;
+  }
 }
 
 .catalog__promo {
@@ -9,6 +13,15 @@
     url('../../images/decorative/intro-triangle.svg') no-repeat 0px 102px,
     url('../../images/decorative/sedona-mobile.svg') no-repeat 45px 52px,
     url('../../images/decorative/back-catalog.jpg') no-repeat 0 -56px;
+
+  @media (min-width: $tablet) {
+    min-height: 291px;
+    margin-bottom: 62px;
+    background:
+    url("../../images/decorative/intro-triangle-tablet.svg") no-repeat -216px 233px,
+    url("../../images/decorative/sedona-tablet.svg") no-repeat 157px 95px,
+    url("../../images/decorative/background-mountains-tablet.png") no-repeat 0px -228px
+  }
 }
 
 .catalog__heading {
@@ -20,6 +33,11 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    margin-bottom: 34px;
+  }
 }
 
 .catalog__description {
@@ -31,4 +49,9 @@
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    margin: 0 170px;
+    margin-bottom: 55px;
+  }
 }
