@@ -18,8 +18,7 @@
 
 .advantage:first-child .advantage__wrapper {
   position: relative;
-  padding-top: 55px;
-  padding-bottom: 39px;
+  padding: 55px 15px 39px;
 
   @media (min-width: $tablet) {
     padding: 40px 32px 44px;

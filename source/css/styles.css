@@ -197,8 +197,12 @@ body {
   text-transform: uppercase;
 }
 
+.nav__item--active .nav__link {
+  color: #766357;
+}
+
 .page__main {
-  margin-top: -32px;
+  margin-top: -28px;
 }
 @media (min-width: 768px) {
   .page__main {
@@ -214,7 +218,7 @@ body {
 @media (min-width: 768px) {
   .main__promo {
     min-height: 518px;
-    background: url("../../images/decorative/intro-triangle-tablet.svg") no-repeat -216px 462px, url("../../images/decorative/text-index-tablet.svg") no-repeat 152px 77px, url("../../images/decorative/background-mountains-tablet.png") no-repeat;
+    background: url("../../images/decorative/intro-triangle-tablet.svg") no-repeat -216px 461px, url("../../images/decorative/text-index-tablet.svg") no-repeat 152px 77px, url("../../images/decorative/background-mountains-tablet.png") no-repeat;
   }
 }
 
@@ -285,7 +289,13 @@ body {
   display: flex;
   flex-direction: column;
 }
+.advantage br {
+  display: none;
+}
 @media (min-width: 768px) {
+  .advantage br {
+    display: block;
+  }
   .advantage::after {
     content: none;
   }
@@ -354,15 +364,6 @@ body {
   padding: 25px 37px;
   background-color: #EEEEEE;
 }
-.advantage:nth-child(n+3):nth-child(-n+5)::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 320px;
-  height: 1px;
-  background-color: #D6D6D6;
-}
 @media (min-width: 768px) {
   .advantage:nth-child(n+3):nth-child(-n+5) {
     padding: 42px 38px;
@@ -379,6 +380,18 @@ body {
   }
 }
 
+.advantage:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  top: 166px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 280px;
+  height: 1px;
+  margin: auto;
+  background-color: #D6D6D6;
+}
 @media (min-width: 768px) {
   .advantage:nth-child(3) {
     padding: 42px 34px 63px 33px;
@@ -386,6 +399,18 @@ body {
   }
 }
 
+.advantage:nth-child(4)::after {
+  content: "";
+  position: absolute;
+  top: 166px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 280px;
+  height: 1px;
+  margin: auto;
+  background-color: #D6D6D6;
+}
 @media (min-width: 768px) {
   .advantage:nth-child(4) {
     padding: 42px 48px 41px 46px;
@@ -467,8 +492,7 @@ body {
 
 .advantage:first-child .advantage__wrapper {
   position: relative;
-  padding-top: 55px;
-  padding-bottom: 39px;
+  padding: 55px 15px 39px;
 }
 @media (min-width: 768px) {
   .advantage:first-child .advantage__wrapper {
@@ -677,9 +701,15 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
+.booking__description br {
+  display: none;
+}
 @media (min-width: 768px) {
   .booking__description {
     margin-bottom: 37px;
+  }
+  .booking__description br {
+    display: block;
   }
 }
 

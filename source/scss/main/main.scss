@@ -1,5 +1,5 @@
 .page__main {
-  margin-top: -32px;
+  margin-top: -28px;
 
   @media (min-width: $tablet) {
     margin-top: 0;
@@ -17,7 +17,7 @@
   @media (min-width: $tablet) {
     min-height: 518px;
     background:
-    url("../../images/decorative/intro-triangle-tablet.svg") no-repeat -216px 462px, url("../../images/decorative/text-index-tablet.svg") no-repeat 152px 77px,
+    url("../../images/decorative/intro-triangle-tablet.svg") no-repeat -216px 461px, url("../../images/decorative/text-index-tablet.svg") no-repeat 152px 77px,
     url("../../images/decorative/background-mountains-tablet.png") no-repeat
   }
 }

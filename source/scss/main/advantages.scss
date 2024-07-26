@@ -4,7 +4,15 @@
   display: flex;
   flex-direction: column;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: $tablet) {
+    br {
+      display: block;
+    }
+
     &::after {
       content: none;
     }
@@ -74,16 +82,6 @@
   padding: 25px 37px;
   background-color: #EEEEEE;
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 320px;
-    height: 1px;
-    background-color: #D6D6D6;
-  }
-
   @media (min-width: $tablet) {
     padding: 42px 38px;
     grid-row: 3/4;
@@ -101,6 +99,19 @@
 }
 
 .advantage:nth-child(3) {
+    &::after {
+    content: "";
+    position: absolute;
+    top: 166px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 280px;
+    height: 1px;
+    margin: auto;
+    background-color: #D6D6D6;
+  }
+
   @media (min-width: $tablet) {
     padding: 42px 34px 63px 33px;
     grid-column: 1/2;
@@ -108,6 +119,19 @@
 }
 
 .advantage:nth-child(4) {
+    &::after {
+    content: "";
+    position: absolute;
+    top: 166px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 280px;
+    height: 1px;
+    margin: auto;
+    background-color: #D6D6D6;
+  }
+
   @media (min-width: $tablet) {
     padding: 42px 48px 41px 46px;
     grid-column: 2/3;

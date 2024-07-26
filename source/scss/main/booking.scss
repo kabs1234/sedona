@@ -34,8 +34,17 @@
   text-align: center;
   text-transform: uppercase;
 
+  br {
+    display: none;
+  }
+
+
   @media (min-width: $tablet) {
     margin-bottom: 37px;
+
+    br {
+      display: block;
+    }
   }
 }
 
