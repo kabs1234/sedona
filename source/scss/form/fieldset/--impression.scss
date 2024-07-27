@@ -1,3 +1,20 @@
+.fieldset--impression {
+  @media (min-width: $tablet) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+    &::after {
+      content: none;
+    }
+  }
+}
+
+.fieldset--impression .fieldset__legend {
+  @media (min-width: $tablet) {
+    margin-left: 0px;
+  }
+}
+
 .fieldset--impression .field {
   position: relative;
   display: flex;
@@ -10,6 +27,12 @@
 .fieldset--impression .fieldset__item {
   &:not(:last-child) {
     margin-bottom: 14px;
+  }
+
+  @media (min-width: $tablet) {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
   }
 }
 
@@ -29,6 +52,10 @@
   line-height: 26px;
   text-align: left;
   text-transform: none;
+
+  @media (min-width: $tablet) {
+    margin-left: 12px;
+  }
 }
 
 .fieldset--impression .field__span {

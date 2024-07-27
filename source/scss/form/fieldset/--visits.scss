@@ -1,3 +1,36 @@
+.fieldset--visits {
+  @media (min-width: $tablet) {
+    margin-bottom: 70px;
+
+    &::after {
+      top: -68px;
+    }
+  }
+}
+
+.fieldset--visits .fieldset__list {
+  @media (min-width: $tablet) {
+    margin: 0 95px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 63px;
+    row-gap: 33px;
+  }
+}
+
+.fieldset--visits .fieldset__item {
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $tablet) {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
 .fieldset--visits .field {
   position: relative;
   display: flex;
@@ -7,9 +40,14 @@
   line-height: 26px;
 }
 
-.fieldset--visits .fieldset__item {
-  &:not(:last-child) {
-    margin-bottom: 25px;
+.fieldset--visits .fieldset__legend {
+  @media (min-width: $tablet) {
+    position: relative;
+    margin-bottom: 42px;
+    padding: 0px 64px;
+    background-color: white;
+    text-align: center;
+    z-index: 0;
   }
 }
 
@@ -29,6 +67,10 @@
   line-height: 26px;
   text-align: left;
   text-transform: none;
+
+  @media (min-width: $tablet) {
+    margin-left: 18px;
+  }
 }
 
 .fieldset--visits .field__span {
@@ -39,8 +81,8 @@
   position: relative;
   top: 2px;
   left: -8px;
-  width: 55px;
-  height: 55px;
+  width: 56px;
+  height: 56px;
   background-color: #F2F2F2;
   display: flex;
   align-items: center;
@@ -58,4 +100,10 @@
 
 .fieldset--visits .field__input:checked ~ .field__span::before {
   opacity: 1;
+}
+
+.fieldset--visits .fieldset__item:last-child .field__name {
+  @media (min-width: $tablet) {
+    margin-left: 13px;
+  }
 }

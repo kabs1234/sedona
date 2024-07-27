@@ -1,4 +1,16 @@
-.fieldset:first-child .field {
+.fieldset--fullname {
+  @media (min-width: $tablet) {
+    margin-left: 58px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    &::after {
+      content: none;
+    }
+  }
+}
+
+.fieldset--fullname .field {
   display: grid;
   grid-template-columns: max-content 1fr;
   column-gap: 15px;

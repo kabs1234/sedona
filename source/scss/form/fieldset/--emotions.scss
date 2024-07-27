@@ -2,9 +2,31 @@
   &::after {
     content: none;
   }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 50px;
+
+    &::after {
+      content: "";
+      top: -71px;
+    }
+  }
 }
 
-.fieldset--emotions .fieldset__input {
+.fieldset--emotions .fieldset__legend {
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    margin-bottom: 55px;
+    padding: 0px 76px;
+    background-color: white;
+    text-align: center;
+    z-index: 0;
+  }
+}
+
+.fieldset--emotions .field__input {
   min-width: 280px;
   min-height: 160px;
   padding: 13px 23px 0 21px;
@@ -15,4 +37,10 @@
   font-weight: 700;
   line-height: 26px;
   resize: none;
+
+  @media (min-width: $tablet) {
+    min-width: 648px;
+    min-height: 160px;
+    padding: 18px 23px 0 21px;
+  }
 }

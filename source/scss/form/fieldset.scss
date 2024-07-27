@@ -14,6 +14,17 @@
     height: 1px;
     background-color: #E5E5E5;
   }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+
+    &::after {
+      width: 100%;
+      top: -37px;
+      right: 0;
+      z-index: -1;
+    }
+  }
 }
 
 .fieldset__legend {
@@ -24,6 +35,12 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 54px;
+    font-size: 21px;
+    text-align: left;
+  }
 }
 
 .fieldset__list {
@@ -68,6 +85,10 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
+
+  &::placeholder {
+    color: $black;
+  }
 }
 
 

@@ -42,7 +42,7 @@
             <li class="nav__item">
               <a class="nav__link" href="">Главная</a>
             </li>
-            <li class="nav__item nav__item--active">
+            <li class="nav__item">
               <a class="nav__link" href="">Фото и видео</a>
             </li>
             <li class="nav__item">
@@ -54,7 +54,7 @@
                 </picture>
               </a>
             </li>
-            <li class="nav__item">
+            <li class="nav__item nav__item--active">
               <a class="nav__link" href="">Форма Отзыва</a>
             </li>
             <li class="nav__item">
@@ -72,81 +72,83 @@
       <p class="form-page__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
 
       <form action="" class="form">
-        <fieldset class="form__fieldset fieldset fieldset--fullname">
-          <legend class="fieldset__legend">Представьтесь:</legend>
+        <div class="form__wrapper">
+          <fieldset class="form__fieldset fieldset fieldset--fullname">
+            <legend class="fieldset__legend">Представьтесь:</legend>
 
-          <ul class="fieldset__list">
-            <li class="fieldset__item">
-              <label class="field" for="name">
-                <span class="field__name">Имя*:</span>
-                <input class="field__input" id="name" type="text" value="Петр">
-              </label>
-            </li>
-            <li class="fieldset__item">
-              <label class="field" for="surname">
-                <span class="field__name">Фамилия*:</span>
-                <input class="field__input" id="surname" type="text" value="Иванов">
-              </label>
+            <ul class="fieldset__list">
+              <li class="fieldset__item">
+                <label class="field" for="name">
+                  <span class="field__name">Имя*:</span>
+                  <input class="field__input" id="name" type="text" placeholder="Петр">
+                </label>
+              </li>
+              <li class="fieldset__item">
+                <label class="field" for="surname">
+                  <span class="field__name">Фамилия*:</span>
+                  <input class="field__input" id="surname" type="text" placeholder="Иванов">
+                </label>
 
-            </li>
-            <li class="fieldset__item">
-              <label class="field" for="patronymic">
-                <span class="field__name">Отчество:</span>
-                <input class="field__input" id="patronymic" type="text" value="Александрович">
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+              </li>
+              <li class="fieldset__item">
+                <label class="field" for="patronymic">
+                  <span class="field__name">Отчество:</span>
+                  <input class="field__input" id="patronymic" type="text" placeholder="Александрович">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
 
-        <fieldset class="form__fieldset fieldset fieldset--contacts">
-          <legend class="fieldset__legend">Контактная информация:</legend>
+          <fieldset class="form__fieldset fieldset fieldset--contacts">
+            <legend class="fieldset__legend">Контактная информация:</legend>
 
-          <ul class="fieldset__list">
-            <li class="fieldset__item">
-              <label for="phone" class="field">Контактный телефон*:</label>
-              <div class="fieldset__wrapper">
-                <input class="field__input" type="tel" id="phone" value="Введите телефон">
-              </div>
-            </li>
-            <li class="fieldset__item">
-              <label for="email" class="field">Электронная почта*:</label>
-              <div class="fieldset__wrapper">
-                <input class="field__input" type="email" id="email" value="Введите e-mail">
-              </div>
-            </li>
-          </ul>
-        </fieldset>
+            <ul class="fieldset__list">
+              <li class="fieldset__item">
+                <label for="phone" class="field">Контактный телефон*:</label>
+                <div class="fieldset__wrapper">
+                  <input class="field__input" type="tel" id="phone" placeholder="Введите телефон">
+                </div>
+              </li>
+              <li class="fieldset__item">
+                <label for="email" class="field">Электронная почта*:</label>
+                <div class="fieldset__wrapper">
+                  <input class="field__input" type="email" id="email" placeholder="Введите e-mail">
+                </div>
+              </li>
+            </ul>
+          </fieldset>
 
-        <fieldset class="form__fieldset fieldset fieldset--impression">
-          <legend class="fieldset__legend">Ваше Общее впечатление:</legend>
+          <fieldset class="form__fieldset fieldset fieldset--impression">
+            <legend class="fieldset__legend">Ваше Общее впечатление:</legend>
 
-          <ul class="fieldset__list">
-            <li class="fieldset__item">
-              <label class="field">
-                <span class="field__name">Скорее положительное</span>
-                <input class="field__input" name="impression" type="radio" value="rather-positive" checked>
-                <span class="field__span"></span>
-              </label>
-            </li>
-            <li class="fieldset__item">
-              <label class="field">
-                <span class="field__name">Скорее отрицательное</span>
-                <input class="field__input" name="impression" type="radio" value="rather-negative">
-                <span class="field__span"></span>
-              </label>
-            </li>
-            <li class="fieldset__item">
-              <label class="field">
-                <span class="field__name">Затрудняюсь ответить</span>
-                <input class="field__input" name="impression" type="radio" value="without-answer">
-                <span class="field__span"></span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+            <ul class="fieldset__list">
+              <li class="fieldset__item">
+                <label class="field">
+                  <span class="field__name">Скорее положительное</span>
+                  <input class="field__input" name="impression" type="radio" value="rather-positive" checked>
+                  <span class="field__span"></span>
+                </label>
+              </li>
+              <li class="fieldset__item">
+                <label class="field">
+                  <span class="field__name">Скорее отрицательное</span>
+                  <input class="field__input" name="impression" type="radio" value="rather-negative">
+                  <span class="field__span"></span>
+                </label>
+              </li>
+              <li class="fieldset__item">
+                <label class="field">
+                  <span class="field__name">Затрудняюсь ответить</span>
+                  <input class="field__input" name="impression" type="radio" value="without-answer">
+                  <span class="field__span"></span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
 
         <fieldset class="fieldset fieldset--visits">
-          <legend class="fieldset__legend">посещенные достопримечательности:</legend>
+          <legend class="fieldset__legend">Посещенные<br> достопримечательности:</legend>
 
           <ul class="fieldset__list">
             <li class="fieldset__item">
@@ -184,12 +186,16 @@
         <fieldset class="fieldset fieldset--emotions">
           <legend class="fieldset__legend">Опишите свои эмоции:</legend>
 
-          <label class="fieldset__label">
-            <textarea class="fieldset__input" name="emotions">Опишите подробно все свои восторги </textarea>
+          <label class="field">
+            <textarea class="field__input" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
           </label>
         </fieldset>
 
-        <button class="form__submit-button" type="submit">Отправить отзыв</button>
+        <div class="form__container">
+          <button class="form__submit-button" type="submit">Отправить отзыв</button>
+
+          <span class="form__info">* — обязательные поля</span>
+        </div>
       </form>
 
     </main>
@@ -232,17 +238,17 @@
     <div class="modal modal--success">
       <div class="modal__container">
         <p class="modal__heading">Ваш отзыв отправлен!</p>
-        <p class="modal__description">Спасибо за ваше участие, ваш<br> отзыв уже поступил к нам.<br>В ближайшее время мы<br> опубликуем его на сайте.</p>
+        <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы опубликуем его на сайте.</p>
         <div class="modal__button-wrapper">
           <p class="modal__button">ЗАкРЫТЬ ОКНО</p>
         </div>
       </div>
     </div>
 
-    <div class="modal modal--error">
+    <div class="modal modal--error modal--active">
       <div class="modal__container">
-        <p class="modal__heading">ЧТО-ТО ПОШЛО НЕ ТАК!</p>
-        <p class="modal__description">Проверьте поля, выделенные<br> красным, скорее всего вы<br> забыли их заполнить</p>
+        <p class="modal__heading">ЧТО-ТО ПОШЛО<br> НЕ ТАК!</p>
+        <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         <p class="modal__button">OK</p>
       </div>
     </div>
