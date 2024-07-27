@@ -9,24 +9,60 @@
   <body>
     <header class="header">
       <nav class="nav">
-        <img src="./images/logotype-mobile.svg" alt="Лого" class="nav__logo" width="102" height="84">
-        <button class="nav__button">
-          <span class="visually-hidden">Открыть меню навигации</span>
-        </button>
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="">Главная</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="">Фото и видео</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="">Форма Отзыва</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="">Html academy</a>
-          </li>
-        </ul>
+        <div class="nav__mobile">
+          <a href="index.html" class="nav__main-link">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./images/content/logotype-desktop.svg">
+              <source media="(min-width: 768px)" srcset="./images/content/logotype-tablet.svg">
+              <img src="./images/content/logotype-mobile.svg" alt="Лого" class="nav__logo" width="102" height="84">
+            </picture>
+          </a>
+
+          <button class="nav__button">
+            <span class="visually-hidden">Открыть меню навигации</span>
+          </button>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Фото и видео</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Форма Отзыва</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Html academy</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__tablet">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="">Главная</a>
+            </li>
+            <li class="nav__item nav__item--active">
+              <a class="nav__link" href="">Фото и видео</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images/content/logotype-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="./images/content/logotype-tablet.svg">
+                  <img src="./images/content/logotype-mobile.svg" alt="Лого" class="nav__logo" width="102" height="84">
+                </picture>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Форма Отзыва</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Html academy</a>
+            </li>
+          </ul>
+        </div>
+
       </nav>
     </header>
 
@@ -36,130 +72,124 @@
       <p class="form-page__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
 
       <form action="" class="form">
+        <fieldset class="form__fieldset fieldset fieldset--fullname">
+          <legend class="fieldset__legend">Представьтесь:</legend>
 
-        <div class="form__container">
+          <ul class="fieldset__list">
+            <li class="fieldset__item">
+              <label class="field" for="name">
+                <span class="field__name">Имя*:</span>
+                <input class="field__input" id="name" type="text" value="Петр">
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="field" for="surname">
+                <span class="field__name">Фамилия*:</span>
+                <input class="field__input" id="surname" type="text" value="Иванов">
+              </label>
 
-          <div>
-            <fieldset class="form__fieldset fieldset fieldset--fullname">
-              <legend class="fieldset__legend">Представьтесь:</legend>
+            </li>
+            <li class="fieldset__item">
+              <label class="field" for="patronymic">
+                <span class="field__name">Отчество:</span>
+                <input class="field__input" id="patronymic" type="text" value="Александрович">
+              </label>
+            </li>
+          </ul>
+        </fieldset>
 
-              <ul class="fieldset__list">
-                <li class="fieldset__item">
-                  <label class="field" for="name">
-                    <span class="field__name">Имя*:</span>
-                    <input class="field__input" id="name" type="text" value="Петр">
-                  </label>
-                </li>
-                <li class="fieldset__item">
-                  <label class="field" for="surname">
-                    <span class="field__name">Фамилия*:</span>
-                    <input class="field__input" id="surname" type="text" value="Иванов">
-                  </label>
+        <fieldset class="form__fieldset fieldset fieldset--contacts">
+          <legend class="fieldset__legend">Контактная информация:</legend>
 
-                </li>
-                <li class="fieldset__item">
-                  <label class="field" for="patronymic">
-                    <span class="field__name">Отчество:</span>
-                    <input class="field__input" id="patronymic" type="text" value="Александрович">
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
+          <ul class="fieldset__list">
+            <li class="fieldset__item">
+              <label for="phone" class="field">Контактный телефон*:</label>
+              <div class="fieldset__wrapper">
+                <input class="field__input" type="tel" id="phone" value="Введите телефон">
+              </div>
+            </li>
+            <li class="fieldset__item">
+              <label for="email" class="field">Электронная почта*:</label>
+              <div class="fieldset__wrapper">
+                <input class="field__input" type="email" id="email" value="Введите e-mail">
+              </div>
+            </li>
+          </ul>
+        </fieldset>
 
-          <fieldset class="form__fieldset fieldset fieldset--contacts">
-            <legend class="fieldset__legend">Контактная информация:</legend>
+        <fieldset class="form__fieldset fieldset fieldset--impression">
+          <legend class="fieldset__legend">Ваше Общее впечатление:</legend>
 
-            <ul class="fieldset__list">
-              <li class="fieldset__item">
-                <label for="phone" class="field">Контактный телефон*:</label>
-                <div class="fieldset__wrapper">
-                  <input class="field__input" type="tel" id="phone" value="Введите телефон">
-                </div>
-              </li>
-              <li class="fieldset__item">
-                <label for="email" class="field">Электронная почта*:</label>
-                <div class="fieldset__wrapper">
-                  <input class="field__input" type="email" id="email" value="Введите e-mail">
-                </div>
-              </li>
-            </ul>
-          </fieldset>
+          <ul class="fieldset__list">
+            <li class="fieldset__item">
+              <label class="field">
+                <span class="field__name">Скорее положительное</span>
+                <input class="field__input" name="impression" type="radio" value="rather-positive" checked>
+                <span class="field__span"></span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="field">
+                <span class="field__name">Скорее отрицательное</span>
+                <input class="field__input" name="impression" type="radio" value="rather-negative">
+                <span class="field__span"></span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="field">
+                <span class="field__name">Затрудняюсь ответить</span>
+                <input class="field__input" name="impression" type="radio" value="without-answer">
+                <span class="field__span"></span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
 
-          <fieldset class="form__fieldset fieldset fieldset--impression">
-            <legend class="fieldset__legend">Ваше Общее впечатление:</legend>
+        <fieldset class="fieldset fieldset--visits">
+          <legend class="fieldset__legend">посещенные достопримечательности:</legend>
 
-            <ul class="fieldset__list">
-              <li class="fieldset__item">
-                <label class="field">
-                  <span class="field__name">Скорее положительное</span>
-                  <input class="field__input" name="impression" type="radio" value="rather-positive" checked>
-                  <span class="field__span"></span>
-                </label>
-              </li>
-              <li class="fieldset__item">
-                <label class="field">
-                  <span class="field__name">Скорее отрицательное</span>
-                  <input class="field__input" name="impression" type="radio" value="rather-negative">
-                  <span class="field__span"></span>
-                </label>
-              </li>
-              <li class="fieldset__item">
-                <label class="field">
-                  <span class="field__name">Затрудняюсь ответить</span>
-                  <input class="field__input" name="impression" type="radio" value="without-answer">
-                  <span class="field__span"></span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+          <ul class="fieldset__list">
+            <li class="fieldset__item">
+              <label class="field">
+                <span class="field__name">Мост Дьявола</span>
+                <input class="field__input" name="visits" type="checkbox" value="devil-bridge" checked>
+                <span class="field__span"></span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="field">
+                <span class="field__name">Гора-Колокол</span>
+                <input class="field__input" name="visits" type="checkbox" value="mountain" checked>
+                <span class="field__span"></span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="field">
+                <span class="field__name">Слайд-парк</span>
+                <input class="field__input" name="visits" type="checkbox" value="park" checked>
+                <span class="field__span"></span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="field">
+                <span class="field__name">Красные скалы</span>
+                <input class="field__input" name="visits" type="checkbox" value="red-rocks">
+                <span class="field__span"></span>
+              </label>
+            </li>
+          </ul>
 
-          <fieldset class="fieldset fieldset--visits">
-            <legend class="fieldset__legend">посещенные достопримечательности:</legend>
+        </fieldset>
 
-            <ul class="fieldset__list">
-              <li class="fieldset__item">
-                <label for="" class="field">
-                  <span class="field__name">Мост Дьявола</span>
-                  <input class="field__input" name="visits" type="checkbox" value="devil-bridge" checked>
-                  <span class="field__span"></span>
-                </label>
-              </li>
-              <li class="fieldset__item">
-                <label for="" class="field">
-                  <span class="field__name">Гора-Колокол</span>
-                  <input class="field__input" name="visits" type="checkbox" value="mountain" checked>
-                  <span class="field__span"></span>
-                </label>
-              </li>
-              <li class="fieldset__item">
-                <label for="" class="field">
-                  <span class="field__name">Слайд-парк</span>
-                  <input class="field__input" name="visits" type="checkbox" value="park" checked>
-                  <span class="field__span"></span>
-                </label>
-              </li>
-              <li class="fieldset__item">
-                <label for="" class="field">
-                  <span class="field__name">Красные скалы</span>
-                  <input class="field__input" name="visits" type="checkbox" value="red-rocks">
-                  <span class="field__span"></span>
-                </label>
-              </li>
-            </ul>
+        <fieldset class="fieldset fieldset--emotions">
+          <legend class="fieldset__legend">Опишите свои эмоции:</legend>
 
-          </fieldset>
+          <label class="fieldset__label">
+            <textarea class="fieldset__input" name="emotions">Опишите подробно все свои восторги </textarea>
+          </label>
+        </fieldset>
 
-          <fieldset class="fieldset fieldset--emotions">
-            <legend class="fieldset__legend">Опишите свои эмоции:</legend>
-
-            <label class="fieldset__label">
-              <textarea class="fieldset__input" name="emotions">Опишите подробно все свои восторги </textarea>
-            </label>
-          </fieldset>
-
-          <button class="form__submit-button" type="submit">Отправить отзыв</button>
-        </div>
+        <button class="form__submit-button" type="submit">Отправить отзыв</button>
       </form>
 
     </main>
@@ -170,24 +200,25 @@
       <ul class="footer__socials socials">
         <li class="socials__item">
           <a class="socials__link" href="">
-            <img src="./images/twitter.svg" alt="Твиттер" width="18" height="15">
+            <img src="./images/content/twitter.svg" alt="Твиттер" width="18" height="15">
             <span class="visually-hidden">Twitter</span>
           </a>
         </li>
 
         <li class="socials__item">
           <a class="socials__link" href="">
-            <img src="./images/facebook.svg" alt="Фейсбук" width="9" height="19">
+            <img src="./images/content/facebook.svg" alt="Фейсбук" width="9" height="19">
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
 
         <li class="socials__item">
           <a class="socials__link" href="">
-            <img src="./images/youtube.svg" alt="Ютуб" width="20" height="14">
+            <img src="./images/content/youtube.svg" alt="Ютуб" width="20" height="14">
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>
+
       </ul>
 
       <a class="footer__copyright copyright" href="">
@@ -206,12 +237,11 @@
       </div>
     </div>
 
-    <div class="modal modal--error modal--active">
+    <div class="modal modal--error">
       <div class="modal__container">
         <p class="modal__heading">ЧТО-ТО ПОШЛО НЕ ТАК!</p>
         <p class="modal__description">Проверьте поля, выделенные<br> красным, скорее всего вы<br> забыли их заполнить</p>
         <p class="modal__button">OK</p>
-
       </div>
     </div>
   </body>

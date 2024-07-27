@@ -1106,9 +1106,9 @@ body {
 }
 
 .form {
+  position: relative;
   width: 280px;
-  margin: 0 auto;
-  margin-bottom: 76px;
+  margin: 20px auto 76px;
 }
 
 .form-page {
@@ -1116,7 +1116,9 @@ body {
 }
 
 .form-page__promo {
+  width: 320px;
   min-height: 158px;
+  margin: 0 auto;
   margin-bottom: 36px;
   background: url("../../images/decorative/intro-triangle.svg") no-repeat 0px 102px, url("../../images/decorative/sedona-mobile.svg") no-repeat 45px 52px, url("../../images/decorative/back-catalog.jpg") no-repeat 0 -56px;
 }
@@ -1159,11 +1161,20 @@ body {
 }
 
 .fieldset {
+  position: relative;
   margin: 0;
-  margin-top: 20px;
+  margin-bottom: 46px;
   padding: 0;
-  padding-bottom: 25px;
   border: none;
+}
+.fieldset::after {
+  content: "";
+  position: absolute;
+  bottom: -28px;
+  right: -20px;
+  width: 320px;
+  height: 1px;
+  background-color: #E5E5E5;
 }
 
 .fieldset__legend {
@@ -1208,30 +1219,29 @@ body {
 }
 
 .field__input {
+  width: 100%;
   padding: 18px 0 14px 22px;
   border: none;
   background-color: #F2F2F2;
-  display: flex;
   font-family: PT Sans;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
 }
 
-.fieldset--fullname .field {
+.fieldset:first-child .field {
   display: grid;
   grid-template-columns: max-content 1fr;
   column-gap: 15px;
   align-items: center;
 }
 
-.fieldset--fullname .fieldset__input {
-  width: 200px;
+.fieldset--contacts {
+  margin-bottom: 49px;
 }
 
-.fieldset--contacts {
-  padding-bottom: 28px;
-  border-bottom: 1px solid #E5E5E5;
+.fieldset--contacts .fieldset__legend {
+  margin-bottom: 17px;
 }
 
 .fieldset--contacts .fieldset__item:not(:last-child) {
@@ -1398,8 +1408,8 @@ body {
   opacity: 1;
 }
 
-.fieldset--emotions {
-  padding-bottom: 47px;
+.fieldset--emotions::after {
+  content: none;
 }
 
 .fieldset--emotions .fieldset__input {
@@ -1412,6 +1422,7 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
+  resize: none;
 }
 
 .modal {

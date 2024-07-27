@@ -1,5 +1,7 @@
 .fieldset--emotions {
-  padding-bottom: 47px;
+  &::after {
+    content: none;
+  }
 }
 
 .fieldset--emotions .fieldset__input {
@@ -12,4 +14,5 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
+  resize: none;
 }

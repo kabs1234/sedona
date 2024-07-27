@@ -1,7 +1,7 @@
 .form {
+  position: relative;
   width: 280px;
-  margin: 0 auto;
-  margin-bottom: 76px;
+  margin: 20px auto 76px;
 }
 
 .form-page {
@@ -9,7 +9,9 @@
 }
 
 .form-page__promo {
+  width: 320px;
   min-height: 158px;
+  margin: 0 auto;
   margin-bottom: 36px;
   background:
     url('../../images/decorative/intro-triangle.svg') no-repeat 0px 102px,
