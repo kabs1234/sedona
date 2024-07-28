@@ -7,8 +7,14 @@
   list-style-type: none;
 
   @media (min-width: $tablet) {
-    // margin-right: auto;
-    // margin-left: auto;
+    margin-bottom: 0;
+    margin-left: 112px;
+    margin-right: 123px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 269px;
+    margin-right: 278px;
   }
 }
 

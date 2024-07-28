@@ -1,3 +1,10 @@
+.advantages {
+  @media (min-width: $desktop) {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
 .advantage {
   position: relative;
   padding-bottom: 26px;
@@ -26,7 +33,7 @@
 
   @media (min-width: $tablet) {
     display: grid;
-    grid-template-columns: repeat(3, 256px);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -55,8 +62,9 @@
     grid-column: 1/4;
     grid-row: 2/3;
     padding: 0;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: column;
   }
 }
 
@@ -66,29 +74,27 @@
 
   @media (min-width: $tablet) {
     padding: 43px 36px 41px;
-    order: 1;
+    grid-column: 3/4;
   }
-}
 
-.advantage:nth-child(2) .advantage__image {
-  @media (min-width: $tablet) {
-    width: 512px;
-    height: 256px;
-    order: 0;
+  @media (min-width: $desktop) {
+    padding: 51px 83px 41px;
   }
 }
 
 .advantage:nth-child(n+3):nth-child(-n+5) {
-  padding: 25px 37px;
   background-color: #EEEEEE;
 
   @media (min-width: $tablet) {
-    padding: 42px 38px;
     grid-row: 3/4;
 
     &::after {
       content: none;
     }
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 63px;
   }
 }
 
@@ -99,7 +105,9 @@
 }
 
 .advantage:nth-child(3) {
-    &::after {
+  padding: 25px 37px;
+
+  &::after {
     content: "";
     position: absolute;
     top: 166px;
@@ -119,7 +127,10 @@
 }
 
 .advantage:nth-child(4) {
-    &::after {
+  padding: 25px 37px;
+
+
+  &::after {
     content: "";
     position: absolute;
     top: 166px;
@@ -133,12 +144,18 @@
   }
 
   @media (min-width: $tablet) {
-    padding: 42px 48px 41px 46px;
+    padding: 42px 50px;
     grid-column: 2/3;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 42px 62px;
   }
 }
 
 .advantage:last-child {
+  padding: 25px 37px;
+
   @media (min-width: $tablet) {
     padding: 42px 40px 42px 41px;
     grid-column: 3/4;
@@ -188,5 +205,11 @@
 }
 
 .advantage__image {
+  width: 100%;
   display: block;
+
+  @media (min-width: $tablet) {
+    width: 200%;
+    height: 256px;
+  }
 }

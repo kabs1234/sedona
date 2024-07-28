@@ -8,17 +8,24 @@
 
 .main__promo {
   min-height: 389px;
+  margin: 0 auto;
   margin-bottom: 32px;
   background:
-    url('../../images/decorative/intro-triangle.svg') no-repeat 0px 332px,
-    url('../../images/decorative/text-index.svg') no-repeat 19px 90px,
-    url('../../images/decorative/background-mountains.png') no-repeat -290px 0px;
+    url('../../images/decorative/intro-triangle-tablet.svg') no-repeat 50% bottom,
+    url('../../images/decorative/text-index.svg') no-repeat 50% 90px,
+    url('../../images/decorative/background-mountains.jpg') no-repeat 50%;
 
   @media (min-width: $tablet) {
     min-height: 518px;
+    margin-bottom: 43.5px;
     background:
-    url("../../images/decorative/intro-triangle-tablet.svg") no-repeat -216px 461px, url("../../images/decorative/text-index-tablet.svg") no-repeat 152px 77px,
-    url("../../images/decorative/background-mountains-tablet.png") no-repeat
+      url("../../images/decorative/intro-triangle-tablet.svg") no-repeat 50% bottom,
+      url("../../images/decorative/text-index-tablet.svg") no-repeat 50% 77px,
+      url("../../images/decorative/background-mountains.jpg") no-repeat 50%
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 55px;
   }
 }
 
@@ -33,12 +40,11 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet) {
-    margin-top: 43.5px;
     font-size: 21px;
   }
 }
 
-@media (max-width: $tablet - 1) {
+@media (max-width: 767px) {
   .main__tablet {
     display: none;
   }
@@ -67,15 +73,16 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 41px;
+  }
 }
 
 .main__map-wrapper {
+  max-width: 1200px;
   height: 350px;
-  margin-bottom: 38.5px;
-
-  @media (min-width: $tablet) {
-    margin-bottom: 36px;
-  }
+  margin: 0 auto;
 }
 
 .main__map {

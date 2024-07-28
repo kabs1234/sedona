@@ -2,20 +2,8 @@
   position: relative;
 }
 
-.nav__mobile, .nav__tablet {
+.nav__burger-menu, .nav__menu {
   display: none;
-}
-
-@media (max-width: 767px) {
-  .nav__mobile {
-    display: flex;
-  }
-}
-
-@media (min-width: 768px) {
-  .nav__tablet {
-    display: block;
-  }
 }
 
 .nav__main-link {
@@ -24,6 +12,11 @@
 
 .nav__logo {
   display: block;
+
+  @media (min-width: $desktop) {
+    width: 187px;
+    height: 97px;
+  }
 }
 
 .nav__button {
