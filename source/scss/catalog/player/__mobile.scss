@@ -1,4 +1,4 @@
-.control__mobile {
+.player__mobile {
   display: none;
 
   @media (max-width: 767px) {
@@ -6,7 +6,7 @@
   }
 }
 
-.control__mobile .control__time {
+.player__mobile .player__time {
   position: absolute;
   bottom: 67px;
   right: 20px;
@@ -17,7 +17,7 @@
   background-color: rgba($color: #000000, $alpha: 0.6);
 }
 
-.control__mobile .control__bar {
+.player__mobile .player__bar {
   position: absolute;
   left: 23px;
   width: 235px;

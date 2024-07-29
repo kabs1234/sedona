@@ -10,17 +10,26 @@
   min-height: 158px;
   margin-bottom: 32px;
   background:
-    url('../../images/decorative/intro-triangle.svg') no-repeat 0px 102px,
-    url('../../images/decorative/sedona-mobile.svg') no-repeat 45px 52px,
-    url('../../images/decorative/back-catalog.jpg') no-repeat 0 -56px;
+    url('../../images/decorative/intro-triangle-tablet.svg') no-repeat 50% bottom,
+    url('../../images/decorative/sedona-mobile.svg') no-repeat 50% 52px,
+    url('../../images/decorative/mountains-catalog-tablet.jpg') no-repeat 50% 50%;
 
   @media (min-width: $tablet) {
     min-height: 291px;
     margin-bottom: 62px;
     background:
-    url("../../images/decorative/intro-triangle-tablet.svg") no-repeat -216px 233px,
-    url("../../images/decorative/sedona-tablet.svg") no-repeat 157px 95px,
-    url("../../images/decorative/background-mountains-tablet.png") no-repeat 0px -228px
+    url("../../images/decorative/intro-triangle-tablet.svg") no-repeat 50% bottom,
+    url("../../images/decorative/sedona-tablet.svg") no-repeat 50% 95px,
+    url("../../images/decorative/mountains-catalog-tablet.jpg") no-repeat 50% -67px
+  }
+
+  @media (min-width: $desktop) {
+    min-height: 301px;
+    margin-bottom: 102px;
+    background:
+    url("../../images/decorative/intro-triangle-tablet.svg") no-repeat 50% bottom,
+    url("../../images/decorative/text-sedona.svg") no-repeat 50% 101px,
+    url("../../images/decorative/mountains-catalog-tablet.jpg") no-repeat 50% -56px
   }
 }
 
@@ -38,6 +47,10 @@
     font-size: 30px;
     margin-bottom: 34px;
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 31px;
+  }
 }
 
 .catalog__description {
@@ -50,8 +63,20 @@
   text-align: center;
   text-transform: uppercase;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: $tablet) {
     margin: 0 170px;
     margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 58px;
+
+    br {
+      display: inline;
+    }
   }
 }

@@ -1,5 +1,13 @@
 .video {
-  margin-bottom: 76px;
+  margin-bottom: 49px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 85px;
+  }
 }
 
 .video__heading {
@@ -28,6 +36,10 @@
   text-align: center;
   text-transform: uppercase;
 
+  br:last-child {
+    display: none;
+  }
+
   @media (min-width: $tablet) {
     margin-bottom: 80px;
     padding: 0 155px;
@@ -36,8 +48,16 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 78px;
+
+    br:last-child {
+      display: inline;
+    }
+  }
 }
 
-.video__control {
+.video__player {
   position: relative;
 }

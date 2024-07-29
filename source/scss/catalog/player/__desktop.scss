@@ -1,7 +1,7 @@
-.control__desktop {
+.player__desktop {
   position: absolute;
   bottom: 0;
-  width: 648px;
+  width: 100%;
   height: 93px;
   padding-left: 27px;
   padding-right: 41px;
@@ -14,18 +14,22 @@
   }
 }
 
-.control__desktop .control__time {
+.player__desktop .player__time {
   position: relative;
   display: flex;
   margin-right: 36px;
 }
 
-.control__desktop .control__bar {
+.player__desktop .player__bar {
   display: block;
   background-color: rgba($color: $white, $alpha: 0.2);
 
   @media (min-width: $tablet) {
     width: 389px;
     height: 3px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 540px;
   }
 }
