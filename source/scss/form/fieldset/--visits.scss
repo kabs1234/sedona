@@ -101,6 +101,8 @@
   &::before {
     content: "";
     position: absolute;
+    top: 19px;
+    right: 15px;
     width: 24px;
     height: 17px;
     background: url('../../../images/decorative/tick.svg') no-repeat;
@@ -114,10 +116,10 @@
 
 .fieldset--visits .fieldset__item:last-child .field__name {
   @media (min-width: $tablet) {
-    margin-left: 13px;
+    margin-left: 20px;
   }
 
-  @media (min-width: $tablet) {
-    margin-left: 20px;
+  @media (min-width: $desktop) {
+    margin-left: 24px;
   }
 }

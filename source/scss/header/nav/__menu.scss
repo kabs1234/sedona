@@ -71,7 +71,14 @@
 
   @media (min-width: $desktop) {
     width: 200px;
+  }
 
+  &:hover {
+    color: $primary-color;
+  }
+
+  &:active {
+    color: rgba($color: $black, $alpha: 0.3);
   }
 }
 

@@ -24,11 +24,24 @@
   }
 }
 
-.socials__link {
+.social__link {
   width: 46px;
   height: 48px;
-  background-color: #81B3D2;
+  background-color: $primary-color;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover {
+    background-color: $primary-hover;
+  }
+
+  &:active {
+    background-color: $primary-active;
+    color: rgba($color: $white, $alpha: 0.3);
+  }
+}
+
+.social__link:active .social__image {
+  opacity: 0.3;
 }

@@ -27,7 +27,7 @@
 .nav__burger-menu .nav__link {
   width: 320px;
   padding: 10px 0 5px;
-  background-color: #81B3D2;
+  background-color: $primary-color;
   display: block;
   font-family: PT Sans;
   font-size: 18px;
@@ -37,4 +37,17 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+
+  @media (min-width: $desktop) {
+    width: 200px;
+  }
+
+  &:hover {
+    background-color: $primary-hover;
+  }
+
+  &:active {
+    background-color: $primary-active;
+    color: rgba($color: $white, $alpha: 0.3);
+  }
 }

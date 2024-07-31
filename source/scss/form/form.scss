@@ -47,7 +47,7 @@
     background:
     url("../../images/decorative/intro-triangle-tablet.svg") no-repeat 50% bottom,
     url("../../images/decorative/text-sedona.svg") no-repeat 50% 101px,
-    url("../../images/decorative/background-mountains.jpg") no-repeat 50% bottom
+    url("../../images/decorative/background-mountains.jpg") no-repeat 50% -218px
   }
 }
 
@@ -122,7 +122,7 @@
 
   @media (min-width: $desktop) {
     margin-bottom: 51.5px;
-    grid-template-rows: 292px 159px;
+    grid-template-rows: 295px 156px;
     row-gap: 71px;
   }
 }
@@ -138,7 +138,7 @@
   min-width: 280px;
   padding: 18.5px 0 13.5px;
   border: none;
-  background-color: #81B3D2;
+  background-color: $primary-color;
   font-family: PT Sans;
   font-size: 21px;
   font-weight: 700;

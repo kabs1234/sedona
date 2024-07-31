@@ -75,6 +75,14 @@
   text-transform: uppercase;
 }
 
+.field:hover .field__span {
+  background-color: #E5E5E5;
+}
+
+.field:active .field__span {
+  background-color: #D5D5D5;
+}
+
 .field__span {
   font-family: PT Sans;
   font-size: 14px;
@@ -95,6 +103,15 @@
 
   &::placeholder {
     color: $black;
+  }
+
+  &:hover {
+    background-color: #E5E5E5;
+  }
+
+  &:focus {
+    outline: 4px solid #E5E5E5;
+    background-color: $white;
   }
 }
 

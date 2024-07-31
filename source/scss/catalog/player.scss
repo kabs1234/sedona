@@ -30,6 +30,14 @@
     top: -3px;
     left: 113px;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .player__img {

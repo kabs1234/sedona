@@ -24,3 +24,19 @@
   color: $black;
   text-transform: uppercase;
 }
+
+.copyright:hover .copyright__text {
+  visibility: hidden;
+}
+
+.copyright:hover .copyright__image {
+  fill: $primary-color;
+}
+
+.copyright:active .copyright__text {
+  visibility: hidden;
+}
+
+.copyright:active .copyright__image {
+  fill: rgba($color: $black, $alpha: 0.3);
+}

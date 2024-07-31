@@ -6,6 +6,18 @@
   }
 }
 
+.player__mobile .player__button:hover path{
+  fill: #333333;
+}
+
+.player__mobile .player__button:active path{
+  fill: #333333;
+}
+
+.player__mobile .player__button:active {
+  opacity: 0.3;
+}
+
 .player__mobile .player__time {
   position: absolute;
   bottom: 67px;

@@ -62,7 +62,7 @@
 .booking__link {
   width: 280px;
   padding: 14.5px 32px 17.5px;
-  background-color: #81B3D2;
+  background-color: $primary-color;
   display: block;
   font-family: PT Sans;
   font-size: 21px;
@@ -75,5 +75,18 @@
 
   @media (min-width: $tablet) {
     width: 458px;
+  }
+
+  &:hover {
+    background-color: $primary-hover;
+  }
+
+  &:active {
+    background-color: $primary-active;
+    color: rgba($color: $white, $alpha: 0.3);
+  }
+
+  &--disabled {
+    background-color: #E5E5E5;
   }
 }

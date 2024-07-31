@@ -1,4 +1,4 @@
-.page__main {
+.page-body__main {
   margin-top: -28px;
 
   @media (min-width: $tablet) {
@@ -83,6 +83,11 @@
   max-width: 1200px;
   height: 350px;
   margin: 0 auto;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+  }
 }
 
 .main__map {

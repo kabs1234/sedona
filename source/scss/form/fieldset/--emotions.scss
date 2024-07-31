@@ -50,4 +50,13 @@
     min-height: 160px;
     padding: 18px 23px 0 21px;
   }
+
+  &:hover {
+    background-color: #E5E5E5;
+  }
+
+  &:focus {
+    outline: 4px solid #E5E5E5;
+    background-color: $white;
+  }
 }

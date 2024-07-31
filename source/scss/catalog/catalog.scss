@@ -12,7 +12,7 @@
   background:
     url('../../images/decorative/intro-triangle-tablet.svg') no-repeat 50% bottom,
     url('../../images/decorative/sedona-mobile.svg') no-repeat 50% 52px,
-    url('../../images/decorative/mountains-catalog-tablet.jpg') no-repeat 50% 50%;
+    url('../../images/decorative/background-mountains.jpg') no-repeat 50% bottom;
 
   @media (min-width: $tablet) {
     min-height: 291px;
@@ -20,7 +20,7 @@
     background:
     url("../../images/decorative/intro-triangle-tablet.svg") no-repeat 50% bottom,
     url("../../images/decorative/sedona-tablet.svg") no-repeat 50% 95px,
-    url("../../images/decorative/mountains-catalog-tablet.jpg") no-repeat 50% -67px
+    url('../../images/decorative/background-mountains.jpg') no-repeat 50% bottom;
   }
 
   @media (min-width: $desktop) {
@@ -29,7 +29,7 @@
     background:
     url("../../images/decorative/intro-triangle-tablet.svg") no-repeat 50% bottom,
     url("../../images/decorative/text-sedona.svg") no-repeat 50% 101px,
-    url("../../images/decorative/mountains-catalog-tablet.jpg") no-repeat 50% -56px
+    url('../../images/decorative/background-mountains.jpg') no-repeat 50% -218px;
   }
 }
 
