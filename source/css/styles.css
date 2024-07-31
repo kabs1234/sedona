@@ -1320,12 +1320,19 @@ body {
 .form {
   position: relative;
   width: 280px;
-  margin: 20px auto 74px;
+  margin: 20px auto 48px;
 }
 @media (min-width: 768px) {
   .form {
     width: 648px;
-    margin-bottom: 97px;
+    margin-top: 0;
+    margin-bottom: 61px;
+  }
+}
+@media (min-width: 1200px) {
+  .form {
+    width: 960px;
+    margin-bottom: 66px;
   }
 }
 
@@ -1339,18 +1346,23 @@ body {
 }
 
 .form-page__promo {
-  width: 320px;
   min-height: 158px;
   margin: 0 auto;
   margin-bottom: 36px;
-  background: url("../../images/decorative/intro-triangle.svg") no-repeat 0px 102px, url("../../images/decorative/sedona-mobile.svg") no-repeat 45px 52px, url("../../images/decorative/back-catalog.jpg") no-repeat 0 -56px;
+  background: url("../../images/decorative/intro-triangle-tablet.svg") no-repeat 50% bottom, url("../../images/decorative/sedona-mobile.svg") no-repeat 50% 52px, url("../../images/decorative/background-mountains.jpg") no-repeat 50% bottom;
 }
 @media (min-width: 768px) {
   .form-page__promo {
-    width: 768px;
     min-height: 291px;
     margin-bottom: 62px;
-    background: url("../../images/decorative/intro-triangle-tablet.svg") no-repeat -216px 233px, url("../../images/decorative/sedona-tablet.svg") no-repeat 157px 95px, url("../../images/decorative/background-mountains-tablet.png") no-repeat 0px -228px;
+    background: url("../../images/decorative/intro-triangle-tablet.svg") no-repeat 50% bottom, url("../../images/decorative/sedona-tablet.svg") no-repeat 50% 95px, url("../../images/decorative/background-mountains.jpg") no-repeat 50% bottom;
+  }
+}
+@media (min-width: 1200px) {
+  .form-page__promo {
+    min-height: 301px;
+    margin-bottom: 114px;
+    background: url("../../images/decorative/intro-triangle-tablet.svg") no-repeat 50% bottom, url("../../images/decorative/text-sedona.svg") no-repeat 50% 101px, url("../../images/decorative/background-mountains.jpg") no-repeat 50% bottom;
   }
 }
 
@@ -1382,6 +1394,9 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
+.form-page__description br {
+  display: none;
+}
 @media (min-width: 768px) {
   .form-page__description {
     margin: 0 162px 87px;
@@ -1389,14 +1404,22 @@ body {
     border: none;
   }
 }
+@media (min-width: 1200px) {
+  .form-page__description {
+    margin-bottom: 57px;
+  }
+  .form-page__description br {
+    display: inline;
+  }
+}
 
 @media (min-width: 768px) {
   .form__wrapper {
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 51.5px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 292px 252px;
     row-gap: 73px;
   }
   .form__wrapper::before {
@@ -1410,6 +1433,13 @@ body {
     width: 1px;
     height: 292px;
     background-color: #DBDBDB;
+  }
+}
+@media (min-width: 1200px) {
+  .form__wrapper {
+    margin-bottom: 51.5px;
+    grid-template-rows: 292px 159px;
+    row-gap: 71px;
   }
 }
 
@@ -1439,14 +1469,19 @@ body {
     margin-right: auto;
   }
 }
+@media (min-width: 1200px) {
+  .form__submit-button {
+    width: 480px;
+    margin-right: auto;
+  }
+}
 
 .form__info {
   display: none;
 }
 @media (min-width: 768px) {
   .form__info {
-    display: inline-block;
-    margin-left: 160px;
+    display: inline;
     font-family: PT Sans;
     font-size: 14px;
     font-weight: 400;
@@ -1482,9 +1517,15 @@ body {
     z-index: -1;
   }
 }
+@media (min-width: 1200px) {
+  .fieldset::after {
+    top: -90px;
+  }
+}
 
 .fieldset__legend {
   margin-bottom: 19px;
+  padding: 0;
   font-family: PT Sans;
   font-size: 18px;
   font-weight: 700;
@@ -1494,7 +1535,7 @@ body {
 }
 @media (min-width: 768px) {
   .fieldset__legend {
-    margin-bottom: 54px;
+    margin-bottom: 56px;
     font-size: 21px;
     text-align: left;
   }
@@ -1555,6 +1596,11 @@ body {
     content: none;
   }
 }
+@media (min-width: 1200px) {
+  .fieldset--fullname {
+    margin-left: 79px;
+  }
+}
 
 .fieldset--fullname .field {
   display: grid;
@@ -1580,11 +1626,22 @@ body {
 @media (min-width: 768px) {
   .fieldset--contacts .fieldset__legend {
     position: relative;
-    z-index: 0;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
     padding: 0px 60px;
     background-color: white;
     text-align: center;
+    z-index: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .fieldset--contacts .fieldset__legend {
+    margin-bottom: 71.5px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .fieldset--contacts .fieldset__list {
+    display: flex;
   }
 }
 
@@ -1594,6 +1651,17 @@ body {
 @media (min-width: 768px) {
   .fieldset--contacts .fieldset__item:not(:last-child) {
     margin-bottom: 25px;
+  }
+}
+@media (min-width: 1200px) {
+  .fieldset--contacts .fieldset__item {
+    display: grid;
+    grid-template-columns: max-content 315px;
+    align-items: center;
+  }
+  .fieldset--contacts .fieldset__item:not(:last-child) {
+    margin-right: 79px;
+    margin-bottom: 0;
   }
 }
 
@@ -1630,13 +1698,26 @@ body {
     margin-bottom: 8px;
   }
 }
+@media (min-width: 1200px) {
+  .fieldset--contacts .field {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 17px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .fieldset--contacts .field__word {
+    display: none;
+  }
+}
 
 .fieldset--contacts .fieldset__item:nth-child(2) .field {
   margin-bottom: 5px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .fieldset--contacts .fieldset__item:nth-child(2) .field {
-    margin-bottom: 5px;
+    margin-bottom: 0;
   }
 }
 
@@ -1644,8 +1725,12 @@ body {
   margin-bottom: 16px;
 }
 
+.fieldset--impression {
+  margin-bottom: 43px;
+}
 @media (min-width: 768px) {
   .fieldset--impression {
+    margin-bottom: 0;
     grid-column: 1/2;
     grid-row: 1/2;
   }
@@ -1653,16 +1738,22 @@ body {
     content: none;
   }
 }
+@media (min-width: 1200px) {
+  .fieldset--impression {
+    margin-left: 4px;
+  }
+}
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .fieldset--impression .fieldset__legend {
-    margin-left: 0px;
+    margin-left: 74px;
   }
 }
 
 .fieldset--impression .field {
   position: relative;
   display: flex;
+  align-items: center;
   font-family: PT Sans;
   font-size: 22px;
   font-weight: 700;
@@ -1674,7 +1765,7 @@ body {
 }
 @media (min-width: 768px) {
   .fieldset--impression .fieldset__item:not(:last-child) {
-    margin-bottom: 24px;
+    margin-bottom: 22px;
   }
 }
 
@@ -1685,7 +1776,6 @@ body {
 }
 
 .fieldset--impression .field__name {
-  margin-top: 17px;
   margin-left: 15px;
   order: 1;
   font-family: PT Sans;
@@ -1709,8 +1799,8 @@ body {
   position: relative;
   top: 2px;
   left: -8px;
-  width: 55px;
-  height: 55px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   background-color: #F2F2F2;
   display: flex;
@@ -1739,15 +1829,27 @@ body {
     top: -68px;
   }
 }
+@media (min-width: 1200px) {
+  .fieldset--visits {
+    margin-bottom: 68px;
+  }
+}
 
 @media (min-width: 768px) {
   .fieldset--visits .fieldset__list {
     margin: 0 95px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     column-gap: 63px;
     row-gap: 33px;
+  }
+}
+@media (min-width: 1200px) {
+  .fieldset--visits .fieldset__list {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
   }
 }
 
@@ -1759,10 +1861,16 @@ body {
     margin-bottom: 0;
   }
 }
+@media (min-width: 1200px) {
+  .fieldset--visits .fieldset__item:not(:last-child) {
+    margin-right: 69px;
+  }
+}
 
 .fieldset--visits .field {
   position: relative;
   display: flex;
+  align-items: center;
   font-family: PT Sans;
   font-size: 22px;
   font-weight: 700;
@@ -1772,7 +1880,7 @@ body {
 @media (min-width: 768px) {
   .fieldset--visits .fieldset__legend {
     position: relative;
-    margin-bottom: 42px;
+    margin-bottom: 43px;
     padding: 0px 64px;
     background-color: white;
     text-align: center;
@@ -1781,26 +1889,20 @@ body {
 }
 
 .fieldset--visits .field__input {
+  position: absolute;
   width: 0;
   height: 0;
   opacity: 0;
 }
 
 .fieldset--visits .field__name {
-  margin-top: 17px;
-  margin-left: 15px;
+  margin-left: 24px;
   order: 1;
   font-family: PT Sans;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
-  text-align: left;
   text-transform: none;
-}
-@media (min-width: 768px) {
-  .fieldset--visits .field__name {
-    margin-left: 18px;
-  }
 }
 
 .fieldset--visits .field__span {
@@ -1809,8 +1911,6 @@ body {
 
 .fieldset--visits .field__span {
   position: relative;
-  top: 2px;
-  left: -8px;
   width: 56px;
   height: 56px;
   background-color: #F2F2F2;
@@ -1836,7 +1936,15 @@ body {
     margin-left: 13px;
   }
 }
+@media (min-width: 768px) {
+  .fieldset--visits .fieldset__item:last-child .field__name {
+    margin-left: 20px;
+  }
+}
 
+.fieldset--emotions {
+  margin-bottom: 51px;
+}
 .fieldset--emotions::after {
   content: none;
 }
@@ -1847,6 +1955,11 @@ body {
   .fieldset--emotions::after {
     content: "";
     top: -71px;
+  }
+}
+@media (min-width: 768px) {
+  .fieldset--emotions {
+    margin-bottom: 58px;
   }
 }
 
@@ -1870,6 +1983,7 @@ body {
   padding: 13px 23px 0 21px;
   border: none;
   background-color: #F2F2F2;
+  display: block;
   font-family: PT Sans;
   font-size: 18px;
   font-weight: 700;

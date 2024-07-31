@@ -13,11 +13,21 @@
 
   @media (min-width: $tablet) {
     position: relative;
-    z-index: 0;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
     padding: 0px 60px;
     background-color: white;
     text-align: center;
+    z-index: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 71.5px;
+  }
+}
+
+.fieldset--contacts .fieldset__list {
+  @media (min-width: $desktop) {
+    display: flex;
   }
 }
 
@@ -29,6 +39,17 @@
   @media (min-width: $tablet) {
     &:not(:last-child) {
       margin-bottom: 25px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: max-content 315px;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-right: 79px;
+      margin-bottom: 0;
     }
   }
 }
@@ -65,13 +86,25 @@
   @media (min-width: $tablet) {
     margin-bottom: 8px;
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 17px;
+  }
+}
+
+.fieldset--contacts .field__word {
+  @media (min-width: $desktop) {
+    display: none;
+  }
 }
 
 .fieldset--contacts .fieldset__item:nth-child(2) .field {
   margin-bottom: 5px;
 
-  @media (min-width: $tablet) {
-    margin-bottom: 5px;
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
   }
 }
 

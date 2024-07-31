@@ -9,7 +9,7 @@
   <body>
     <header class="header">
       <nav class="nav">
-        <div class="nav__mobile">
+        <div class="nav__burger-menu">
           <a href="index.html" class="nav__main-link">
             <picture>
               <source media="(min-width: 1200px)" srcset="./images/content/logotype-desktop.svg">
@@ -37,7 +37,7 @@
           </ul>
         </div>
 
-        <div class="nav__tablet">
+        <div class="nav__menu">
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link" href="">Главная</a>
@@ -69,7 +69,7 @@
     <main class="form-page">
       <div class="form-page__promo"></div>
       <h1 class="form-page__heading">Оставьте свой отзыв</h1>
-      <p class="form-page__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <p class="form-page__description">Помогите нашим отелям стать лучше! оставьте отзыв о них,<br> а также о посещенных вами достопримечательностях</p>
 
       <form action="" class="form">
         <div class="form__wrapper">
@@ -104,7 +104,9 @@
 
             <ul class="fieldset__list">
               <li class="fieldset__item">
-                <label for="phone" class="field">Контактный телефон*:</label>
+                <label for="phone" class="field">
+                  <span class="field__word">Контактный</span> телефон*:
+                </label>
                 <div class="fieldset__wrapper">
                   <input class="field__input" type="tel" id="phone" placeholder="Введите телефон">
                 </div>
@@ -186,9 +188,9 @@
         <fieldset class="fieldset fieldset--emotions">
           <legend class="fieldset__legend">Опишите свои эмоции:</legend>
 
-          <label class="field">
-            <textarea class="field__input" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
-          </label>
+
+          <label class="field" for="emotions"></label>
+          <textarea class="field__input" id="emotions" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
 
         <div class="form__container">
@@ -245,7 +247,7 @@
       </div>
     </div>
 
-    <div class="modal modal--error modal--active">
+    <div class="modal modal--error">
       <div class="modal__container">
         <p class="modal__heading">ЧТО-ТО ПОШЛО<br> НЕ ТАК!</p>
         <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
