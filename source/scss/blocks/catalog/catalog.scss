@@ -1,0 +1,103 @@
+.catalog {
+  margin-top: -28px;
+
+  @media (min-width: $tablet) {
+    margin-top: 0;
+  }
+}
+
+.catalog__promo {
+  min-height: 158px;
+  margin-bottom: 32px;
+  background:
+    url('../../../images/decorative/intro-triangle-tablet.svg') 50% bottom no-repeat,
+    url('../../../images/decorative/sedona-mobile.svg') 50% 52px no-repeat,
+    url('../../../images/decorative/background-mountains.jpg') 50% bottom/768px no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background:
+      url('../../../images/decorative/intro-triangle-tablet.svg') 50% bottom no-repeat,
+      url('../../../images/decorative/sedona-mobile.svg') 50% 52px no-repeat,
+      url('../../../images/decorative/background-mountains@2x.jpg') 50% bottom/768px no-repeat;
+    }
+
+  @media (min-width: $tablet) {
+    min-height: 291px;
+    margin-bottom: 62px;
+    background:
+    url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat,
+    url("../../../images/decorative/sedona-tablet.svg") 50% 95px no-repeat,
+    url('../../../images/decorative/background-mountains.jpg') 50% bottom no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background:
+      url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat,
+      url("../../../images/decorative/sedona-tablet.svg") 50% 95px no-repeat,
+      url("../../../images/decorative/background-mountains@2x.jpg") 50% bottom / 1200px no-repeat;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    min-height: 301px;
+    margin-bottom: 102px;
+    background:
+    url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat,
+    url("../../../images/decorative/text-sedona.svg") 50% 101px no-repeat,
+    url('../../../images/decorative/background-mountains.jpg') 50% -218px no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background:
+      url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat,
+      url("../../../images/decorative/text-sedona.svg") 50% 101px no-repeat,
+      url("../../../images/decorative/background-mountains@2x.jpg") 50% -218px / 1200px no-repeat;
+    }
+  }
+}
+
+.catalog__heading {
+  margin: 0;
+  margin-bottom: 28px;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 31px;
+  }
+}
+
+.catalog__description {
+  margin: 0 20px;
+  margin-bottom: 31px;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet) {
+    margin: 0 170px;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 58px;
+
+    br {
+      display: inline;
+    }
+  }
+}

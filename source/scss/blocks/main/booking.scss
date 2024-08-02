@@ -1,0 +1,92 @@
+.booking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  padding-top: 33px;
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet) {
+    padding: 58px 155px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 55px 0 66px;
+  }
+}
+
+.booking__heading {
+  margin: 0;
+  margin-bottom: 22px;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 33px;
+    font-size: 30px;
+  }
+}
+
+.booking__description {
+  margin: 0;
+  margin-bottom: 27px;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+
+  br {
+    display: none;
+  }
+
+
+  @media (min-width: $tablet) {
+    margin-bottom: 37px;
+
+    br {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 45px;
+  }
+}
+
+.booking__link {
+  width: 280px;
+  padding: 14.5px 32px 17.5px;
+  background-color: $primary-color;
+  display: block;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $white;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    width: 458px;
+  }
+
+  &:hover {
+    background-color: $primary-hover;
+  }
+
+  &:active {
+    background-color: $primary-active;
+    color: rgba($color: $white, $alpha: 0.3);
+  }
+
+  &--disabled {
+    background-color: #E5E5E5;
+  }
+}

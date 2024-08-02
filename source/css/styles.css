@@ -3,14 +3,14 @@
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: local("PT Sans"), local("PT Sans Regular"), url("../fonts/PTSans-Regular.woff2") format(woff2), url("../fonts/PTSans-Regular.woff") format(woff);
+  src: local("PT Sans"), local("PT Sans Regular"), url("../../fonts/PTSans-Regular.woff2") format(woff2), url("../../fonts/PTSans-Regular.woff") format(woff);
 }
 @font-face {
   font-family: "PT Sans";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: local("PT Sans"), local("PT Sans Bold"), url("../fonts/PTSans-Bold.woff2") format(woff2), url("../fonts/PTSans-Bold.woff") format(woff);
+  src: local("PT Sans"), local("PT Sans Bold"), url("../../fonts/PTSans-Bold.woff2") format(woff2), url("../../fonts/PTSans-Bold.woff") format(woff);
 }
 *, *::before, *::after {
   box-sizing: border-box;
@@ -185,7 +185,7 @@ body {
   padding: 10px 0 5px;
   background-color: #81B3D2;
   display: block;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 40px;
@@ -260,7 +260,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
@@ -284,6 +284,12 @@ body {
 .nav__item--active .nav__link {
   color: #766357;
 }
+.nav__item--active .nav__link:hover {
+  color: #766357;
+}
+.nav__item--active .nav__link:active {
+  color: #766357;
+}
 
 .page-body__main {
   margin-top: -28px;
@@ -298,13 +304,23 @@ body {
   min-height: 389px;
   margin: 0 auto;
   margin-bottom: 32px;
-  background: url("../../images/decorative/intro-triangle-tablet.svg") no-repeat 50% bottom, url("../../images/decorative/text-index.svg") no-repeat 50% 90px, url("../../images/decorative/background-mountains.jpg") no-repeat 50%;
+  background: url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../../../images/decorative/text-index.svg") 50% 90px no-repeat, url("../../../images/decorative/background-mountains.jpg") 50% -36px no-repeat;
+}
+@media (min-resolution: 2dppx) {
+  .main__promo {
+    background: url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../../../images/decorative/text-index.svg") 50% 90px no-repeat, url("../../../images/decorative/background-mountains@2x.jpg") 50% -36px/1200px no-repeat;
+  }
 }
 @media (min-width: 768px) {
   .main__promo {
     min-height: 518px;
     margin-bottom: 43.5px;
-    background: url("../../images/decorative/intro-triangle-tablet.svg") no-repeat 50% bottom, url("../../images/decorative/text-index-tablet.svg") no-repeat 50% 77px, url("../../images/decorative/background-mountains.jpg") no-repeat 50%;
+    background: url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../../../images/decorative/text-index-tablet.svg") 50% 77px no-repeat, url("../../../images/decorative/background-mountains.jpg") 50% -1px no-repeat;
+  }
+}
+@media (min-width: 768px) and (min-resolution: 2dppx) {
+  .main__promo {
+    background: url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../../../images/decorative/text-index-tablet.svg") 50% 77px no-repeat, url("../../../images/decorative/background-mountains@2x.jpg") 50% -1px/1200px no-repeat;
   }
 }
 @media (min-width: 1200px) {
@@ -316,7 +332,7 @@ body {
 .main__heading {
   margin: 0;
   margin-bottom: 32px;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -342,7 +358,7 @@ body {
 .main__description {
   margin: 0;
   margin-bottom: 27px;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
@@ -361,23 +377,6 @@ body {
   .main__description {
     margin-bottom: 41px;
   }
-}
-
-.main__map-wrapper {
-  max-width: 1200px;
-  height: 350px;
-  margin: 0 auto;
-  margin-bottom: 10px;
-}
-@media (min-width: 768px) {
-  .main__map-wrapper {
-    margin-bottom: 0;
-  }
-}
-
-.main__map {
-  width: 100%;
-  height: 350px;
 }
 
 @media (min-width: 1200px) {
@@ -421,14 +420,14 @@ body {
   content: none;
 }
 
-.advantage--blue {
+.advantage__wrapper--blue {
   margin: 0;
   padding-bottom: 0;
   border: none;
   background-color: #81B3D2;
   color: #ffffff;
 }
-.advantage--blue::after {
+.advantage__wrapper--blue::after {
   content: none;
 }
 
@@ -547,7 +546,7 @@ body {
 .advantage__name {
   margin: 0;
   margin-bottom: 12px;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -564,7 +563,7 @@ body {
   margin: 0;
   margin-bottom: 16px;
   display: block;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -579,7 +578,7 @@ body {
 
 .advantage__description {
   margin: 0;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -703,7 +702,7 @@ body {
   left: -48px;
   width: 39px;
   height: 37px;
-  background-image: url("../../images/decorative/home.svg");
+  background-image: url("../../../images/decorative/home.svg");
 }
 @media (min-width: 768px) {
   .info__item:first-child {
@@ -716,7 +715,7 @@ body {
     margin: 0 auto;
     width: 75px;
     height: 72px;
-    background-image: url("../../images/decorative/icon-house-tablet.svg");
+    background-image: url("../../../images/decorative/icon-house-tablet.svg");
   }
 }
 
@@ -725,7 +724,7 @@ body {
   left: -44px;
   width: 32px;
   height: 38px;
-  background-image: url("../../images/decorative/souvenirs.svg");
+  background-image: url("../../../images/decorative/souvenirs.svg");
 }
 @media (min-width: 768px) {
   .info__item:nth-child(2) {
@@ -738,7 +737,7 @@ body {
     margin: 0 auto;
     width: 64px;
     height: 75px;
-    background-image: url("../../images/decorative/icon-gift-tablet.svg");
+    background-image: url("../../../images/decorative/icon-gift-tablet.svg");
   }
 }
 
@@ -758,7 +757,7 @@ body {
   left: -51px;
   width: 40px;
   height: 35px;
-  background-image: url("../../images/decorative/food.svg");
+  background-image: url("../../../images/decorative/food.svg");
 }
 @media (min-width: 768px) {
   .info__item:last-child {
@@ -773,14 +772,14 @@ body {
     margin: 0 auto;
     width: 76px;
     height: 68px;
-    background-image: url("../../images/decorative/icon-burger-tablet.svg");
+    background-image: url("../../../images/decorative/icon-burger-tablet.svg");
   }
 }
 
 .info__heading {
   margin: 0;
   margin-bottom: 16px;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -796,7 +795,7 @@ body {
 
 .info__message {
   margin: 0;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -826,7 +825,7 @@ body {
 .booking__heading {
   margin: 0;
   margin-bottom: 22px;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -843,7 +842,7 @@ body {
 .booking__description {
   margin: 0;
   margin-bottom: 27px;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -872,7 +871,7 @@ body {
   padding: 14.5px 32px 17.5px;
   background-color: #81B3D2;
   display: block;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -897,6 +896,25 @@ body {
   background-color: #E5E5E5;
 }
 
+.location {
+  position: relative;
+  max-width: 1200px;
+  height: 350px;
+  width: 100vw;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .location {
+    margin-bottom: 0;
+  }
+}
+
+.location__map {
+  width: 100%;
+  height: 350px;
+}
+
 .catalog {
   margin-top: -28px;
 }
@@ -909,27 +927,42 @@ body {
 .catalog__promo {
   min-height: 158px;
   margin-bottom: 32px;
-  background: url("../../images/decorative/intro-triangle-tablet.svg") no-repeat 50% bottom, url("../../images/decorative/sedona-mobile.svg") no-repeat 50% 52px, url("../../images/decorative/background-mountains.jpg") no-repeat 50% bottom;
+  background: url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../../../images/decorative/sedona-mobile.svg") 50% 52px no-repeat, url("../../../images/decorative/background-mountains.jpg") 50% bottom/768px no-repeat;
+}
+@media (min-resolution: 2dppx) {
+  .catalog__promo {
+    background: url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../../../images/decorative/sedona-mobile.svg") 50% 52px no-repeat, url("../../../images/decorative/background-mountains@2x.jpg") 50% bottom/768px no-repeat;
+  }
 }
 @media (min-width: 768px) {
   .catalog__promo {
     min-height: 291px;
     margin-bottom: 62px;
-    background: url("../../images/decorative/intro-triangle-tablet.svg") no-repeat 50% bottom, url("../../images/decorative/sedona-tablet.svg") no-repeat 50% 95px, url("../../images/decorative/background-mountains.jpg") no-repeat 50% bottom;
+    background: url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../../../images/decorative/sedona-tablet.svg") 50% 95px no-repeat, url("../../../images/decorative/background-mountains.jpg") 50% bottom no-repeat;
+  }
+}
+@media (min-width: 768px) and (min-resolution: 2dppx) {
+  .catalog__promo {
+    background: url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../../../images/decorative/sedona-tablet.svg") 50% 95px no-repeat, url("../../../images/decorative/background-mountains@2x.jpg") 50% bottom/1200px no-repeat;
   }
 }
 @media (min-width: 1200px) {
   .catalog__promo {
     min-height: 301px;
     margin-bottom: 102px;
-    background: url("../../images/decorative/intro-triangle-tablet.svg") no-repeat 50% bottom, url("../../images/decorative/text-sedona.svg") no-repeat 50% 101px, url("../../images/decorative/background-mountains.jpg") no-repeat 50% -218px;
+    background: url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../../../images/decorative/text-sedona.svg") 50% 101px no-repeat, url("../../../images/decorative/background-mountains.jpg") 50% -218px no-repeat;
+  }
+}
+@media (min-width: 1200px) and (min-resolution: 2dppx) {
+  .catalog__promo {
+    background: url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../../../images/decorative/text-sedona.svg") 50% 101px no-repeat, url("../../../images/decorative/background-mountains@2x.jpg") 50% -218px/1200px no-repeat;
   }
 }
 
 .catalog__heading {
   margin: 0;
   margin-bottom: 28px;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -951,7 +984,7 @@ body {
 .catalog__description {
   margin: 0 20px;
   margin-bottom: 31px;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -1098,7 +1131,7 @@ body {
 
 .photo__name {
   margin: 0;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
@@ -1118,7 +1151,7 @@ body {
 .photo__author {
   margin: 0;
   margin-bottom: 13px;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -1139,8 +1172,8 @@ body {
   position: relative;
   display: inline-block;
   padding-left: 37px;
-  background: transparent url("../../images/decorative/like.svg") no-repeat 0 -1px;
-  font-family: PT Sans;
+  background: transparent url("../../../images/decorative/like.svg") no-repeat 0 -1px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
@@ -1158,7 +1191,7 @@ body {
 @media (min-width: 1200px) {
   .photo__likes {
     color: #ffffff;
-    background: transparent url("../../images/decorative/like-white.svg") no-repeat;
+    background: transparent url("../../../images/decorative/like-white.svg") no-repeat;
   }
 }
 
@@ -1179,7 +1212,7 @@ body {
 .video__heading {
   margin: 0;
   margin-bottom: 28px;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -1196,7 +1229,7 @@ body {
 .video__text {
   margin: 0;
   margin-bottom: 33px;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -1439,27 +1472,42 @@ body {
   min-height: 158px;
   margin: 0 auto;
   margin-bottom: 36px;
-  background: url("../../images/decorative/intro-triangle-tablet.svg") no-repeat 50% bottom, url("../../images/decorative/sedona-mobile.svg") no-repeat 50% 52px, url("../../images/decorative/background-mountains.jpg") no-repeat 50% bottom;
+  background: url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../../../images/decorative/sedona-mobile.svg") 50% 52px no-repeat, url("../../../images/decorative/background-mountains.jpg") 50% bottom/768px no-repeat;
+}
+@media (min-resolution: 2dppx) {
+  .form-page__promo {
+    background: url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../../../images/decorative/sedona-mobile.svg") 50% 52px no-repeat, url("../../../images/decorative/background-mountains@2x.jpg") 50% bottom/768px no-repeat;
+  }
 }
 @media (min-width: 768px) {
   .form-page__promo {
     min-height: 291px;
     margin-bottom: 62px;
-    background: url("../../images/decorative/intro-triangle-tablet.svg") no-repeat 50% bottom, url("../../images/decorative/sedona-tablet.svg") no-repeat 50% 95px, url("../../images/decorative/background-mountains.jpg") no-repeat 50% bottom;
+    background: url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../../../images/decorative/sedona-tablet.svg") 50% 95px no-repeat, url("../../../images/decorative/background-mountains.jpg") 50% bottom no-repeat;
+  }
+}
+@media (min-width: 768px) and (min-resolution: 2dppx) {
+  .form-page__promo {
+    background: url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../../../images/decorative/sedona-tablet.svg") 50% 95px no-repeat, url("../../../images/decorative/background-mountains@2x.jpg") 50% bottom/1200px no-repeat;
   }
 }
 @media (min-width: 1200px) {
   .form-page__promo {
     min-height: 301px;
     margin-bottom: 114px;
-    background: url("../../images/decorative/intro-triangle-tablet.svg") no-repeat 50% bottom, url("../../images/decorative/text-sedona.svg") no-repeat 50% 101px, url("../../images/decorative/background-mountains.jpg") no-repeat 50% -218px;
+    background: url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../../../images/decorative/text-sedona.svg") 50% 101px no-repeat, url("../../../images/decorative/background-mountains.jpg") 50% -218px no-repeat;
+  }
+}
+@media (min-width: 1200px) and (min-resolution: 2dppx) {
+  .form-page__promo {
+    background: url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../../../images/decorative/text-sedona.svg") 50% 101px no-repeat, url("../../../images/decorative/background-mountains@2x.jpg") 50% -218px/1200px no-repeat;
   }
 }
 
 .form-page__heading {
   margin: 0;
   margin-bottom: 29px;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -1477,7 +1525,7 @@ body {
   margin: 0;
   padding-bottom: 16px;
   border-bottom: 1px solid #E5E5E5;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -1545,7 +1593,7 @@ body {
   padding: 18.5px 0 13.5px;
   border: none;
   background-color: #81B3D2;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -1572,7 +1620,7 @@ body {
 @media (min-width: 768px) {
   .form__info {
     display: inline;
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
@@ -1586,6 +1634,7 @@ body {
   margin-bottom: 46px;
   padding: 0;
   border: none;
+  background-color: transparent;
 }
 .fieldset::after {
   content: "";
@@ -1601,22 +1650,14 @@ body {
     margin-bottom: 0;
   }
   .fieldset::after {
-    width: 100%;
-    top: -37px;
-    right: 0;
-    z-index: -1;
-  }
-}
-@media (min-width: 1200px) {
-  .fieldset::after {
-    top: -90px;
+    content: none;
   }
 }
 
 .fieldset__legend {
   margin-bottom: 19px;
   padding: 0;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -1647,7 +1688,7 @@ body {
 }
 
 .field {
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
@@ -1663,32 +1704,38 @@ body {
 }
 
 .field__span {
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
   text-transform: uppercase;
 }
 
-.field__input {
+.field__input, .fieldset__input {
   width: 100%;
   padding: 18px 0 14px 22px;
   border: none;
   background-color: #F2F2F2;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
 }
-.field__input::placeholder {
+.field__input::placeholder, .fieldset__input::placeholder {
   color: #000000;
 }
-.field__input:hover {
+.field__input:hover, .fieldset__input:hover {
   background-color: #E5E5E5;
 }
-.field__input:focus {
+.field__input:focus, .fieldset__input:focus {
   outline: 4px solid #E5E5E5;
   background-color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .fieldset--contacts, .fieldset--visits, .fieldset--emotions {
+    border-top: 1px solid #e5e5e5;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1826,7 +1873,7 @@ body {
   }
 }
 
-.fieldset--contacts .field__input:not(:last-child) {
+.fieldset--contacts .fieldset__input:not(:last-child) {
   margin-bottom: 16px;
 }
 
@@ -1859,7 +1906,7 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 22px;
   font-weight: 700;
   line-height: 26px;
@@ -1883,7 +1930,7 @@ body {
 .fieldset--impression .field__name {
   margin-left: 15px;
   order: 1;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -1976,7 +2023,7 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 22px;
   font-weight: 700;
   line-height: 26px;
@@ -2003,7 +2050,7 @@ body {
 .fieldset--visits .field__name {
   margin-left: 24px;
   order: 1;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -2057,15 +2104,6 @@ body {
 }
 @media (min-width: 768px) {
   .fieldset--emotions {
-    margin-bottom: 50px;
-  }
-  .fieldset--emotions::after {
-    content: "";
-    top: -71px;
-  }
-}
-@media (min-width: 768px) {
-  .fieldset--emotions {
     margin-bottom: 58px;
   }
 }
@@ -2084,30 +2122,30 @@ body {
   }
 }
 
-.fieldset--emotions .field__input {
+.fieldset--emotions .fieldset__input {
   min-width: 280px;
   min-height: 160px;
   padding: 13px 23px 0 21px;
   border: none;
   background-color: #F2F2F2;
   display: block;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   resize: none;
 }
 @media (min-width: 768px) {
-  .fieldset--emotions .field__input {
+  .fieldset--emotions .fieldset__input {
     min-width: 648px;
     min-height: 160px;
     padding: 18px 23px 0 21px;
   }
 }
-.fieldset--emotions .field__input:hover {
+.fieldset--emotions .fieldset__input:hover {
   background-color: #E5E5E5;
 }
-.fieldset--emotions .field__input:focus {
+.fieldset--emotions .fieldset__input:focus {
   outline: 4px solid #E5E5E5;
   background-color: #ffffff;
 }
@@ -2134,7 +2172,7 @@ body {
 .modal__heading {
   margin: 0;
   margin-bottom: 27px;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -2151,7 +2189,7 @@ body {
 .modal__description {
   margin: 0;
   margin-bottom: 39px;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -2182,7 +2220,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -2296,7 +2334,7 @@ body {
 .footer__slogan {
   margin-bottom: 33.5px;
   display: block;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -2365,7 +2403,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;

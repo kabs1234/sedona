@@ -7,7 +7,7 @@ const browserSync = require('browser-sync').create();
 
 // Styles
 const styles = () => {
-  return gulp.src('./source/scss/styles.scss', { sourcemaps: true })
+  return gulp.src('./source/scss/global/styles.scss', { sourcemaps: true })
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([autoprefixer()]))

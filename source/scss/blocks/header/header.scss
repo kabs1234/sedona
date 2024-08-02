@@ -1,0 +1,13 @@
+.header {
+  width: 280px;
+  margin: 0 auto;
+  background-color: $white;
+
+  @media (min-width: $tablet) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1200px;
+  }
+}

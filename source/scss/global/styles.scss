@@ -1,0 +1,38 @@
+@import "./_variables.scss";
+@import "./global.scss";
+
+// header
+
+@import "../blocks/header/header.scss";
+@import "../blocks/header/nav.scss";
+@import "../blocks/header/nav/__burger-menu.scss";
+@import "../blocks/header/nav/__menu.scss";
+
+// main
+
+@import "../blocks/main/main.scss";
+@import "../blocks/main/advantages.scss";
+@import "../blocks/main/advantage/first-child.scss";
+@import "../blocks/main/info.scss";
+@import "../blocks/main/booking.scss";
+@import "../blocks/main/location.scss";
+@import "../blocks/catalog/catalog.scss";
+@import "../blocks/catalog/photo.scss";
+@import "../blocks/catalog/video.scss";
+@import "../blocks/catalog/player.scss";
+@import "../blocks/catalog/player/__mobile.scss";
+@import "../blocks/catalog/player/__desktop.scss";
+@import "../blocks/form/form.scss";
+@import "../blocks/form/fieldset.scss";
+@import "../blocks/form/fieldset/--fullname.scss";
+@import "../blocks/form/fieldset/--contacts.scss";
+@import "../blocks/form/fieldset/--impression.scss";
+@import "../blocks/form/fieldset/--visits.scss";
+@import "../blocks/form/fieldset/--emotions.scss";
+@import "../blocks/modal/modal.scss";
+
+// footer
+
+@import "../blocks/footer/footer.scss";
+@import "../blocks/footer/socials.scss";
+@import "../blocks/footer/copyright.scss";

@@ -1,0 +1,154 @@
+.modal {
+  position: fixed;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.modal__container {
+  width: 320px;
+  margin: 0 auto;
+  margin-top: 116px;
+  background-color: $white;
+  box-shadow: 0px 7px 15px 0px #00010126;
+}
+
+.modal__heading {
+  margin: 0;
+  margin-bottom: 27px;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    margin-bottom: 31px;
+  }
+}
+
+.modal__description {
+  margin: 0;
+  margin-bottom: 39px;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 43px;
+    padding: 0;
+  }
+}
+
+.modal__button-wrapper {
+  background-color: #F2F2F2;
+  padding: 20px 0;
+
+  @media (min-width: $tablet) {
+    padding: 44px 91px;
+  }
+}
+
+.modal__button {
+  min-height: 58px;
+  margin: 0;
+  background-color: $primary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 21px;
+  }
+}
+
+.modal--success .modal__container {
+  padding-top: 38px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    width: 640px;
+    box-shadow: 0px 7px 15px 0px #00010126;
+    padding-top: 55px;
+    padding-bottom: 0;
+  }
+}
+
+.modal--success .modal__description {
+  padding: 0 32px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 43px;
+    padding: 0 37px;
+  }
+}
+
+.modal--success .modal__button {
+  margin: 0 20px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
+}
+
+.modal--error .modal__container {
+  padding-top: 40px;
+  padding-bottom: 35px;
+
+  @media (min-width: $tablet) {
+    width: 400px;
+    padding-top: 52px;
+    padding-bottom: 49px;
+  }
+}
+
+.modal--error .modal__heading {
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 24px;
+    font-size: 30px;
+    line-height: 40px;
+
+    br {
+      display: block;
+    }
+  }
+}
+
+.modal--error .modal__description {
+  padding: 0 41px;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 38px;
+    padding: 0 37px;
+  }
+}
+
+.modal--error .modal__button {
+  margin: 0 70px;
+
+  @media (min-width: $tablet) {
+    margin: 0 64px;
+  }
+}

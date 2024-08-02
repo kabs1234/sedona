@@ -1,0 +1,53 @@
+.fieldset--emotions {
+  margin-bottom: 51px;
+
+  &::after {
+    content: none;
+  }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 58px;
+  }
+}
+
+.fieldset--emotions .fieldset__legend {
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    margin-bottom: 55px;
+    padding: 0px 76px;
+    background-color: white;
+    text-align: center;
+    z-index: 0;
+  }
+}
+
+.fieldset--emotions .fieldset__input {
+  min-width: 280px;
+  min-height: 160px;
+  padding: 13px 23px 0 21px;
+  border: none;
+  background-color: #F2F2F2;
+  display: block;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  resize: none;
+
+  @media (min-width: $tablet) {
+    min-width: 648px;
+    min-height: 160px;
+    padding: 18px 23px 0 21px;
+  }
+
+  &:hover {
+    background-color: #E5E5E5;
+  }
+
+  &:focus {
+    outline: 4px solid #E5E5E5;
+    background-color: $white;
+  }
+}
