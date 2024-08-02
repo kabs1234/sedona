@@ -2,7 +2,8 @@
   position: relative;
 }
 
-.nav__burger-menu, .nav__menu {
+.nav__burger-menu,
+.nav__menu {
   display: none;
 }
 
@@ -41,7 +42,7 @@
     height: 4px;
     margin: auto;
     background-color: $primary-color;
-    box-shadow: 0px -9px 0 0 $primary-color, 0px 9px 0 0 $primary-color;;
+    box-shadow: 0 -9px 0 0 $primary-color, 0 9px 0 0 $primary-color;
   }
 
   &:hover {

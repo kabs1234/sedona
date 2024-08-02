@@ -51,7 +51,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 22px;
   font-weight: 700;
   line-height: 26px;
@@ -61,8 +61,8 @@
   @media (min-width: $tablet) {
     position: relative;
     margin-bottom: 43px;
-    padding: 0px 64px;
-    background-color: white;
+    padding: 0 64px;
+    background-color: $white;
     text-align: center;
     z-index: 0;
   }
@@ -78,7 +78,7 @@
 .fieldset--visits .field__name {
   margin-left: 24px;
   order: 1;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -86,17 +86,14 @@
 }
 
 .fieldset--visits .field__span {
-  order: 0;
-}
-
-.fieldset--visits .field__span {
   position: relative;
   width: 56px;
   height: 56px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   display: flex;
   align-items: center;
   justify-content: center;
+  order: 0;
 
   &::before {
     content: "";
@@ -105,7 +102,7 @@
     right: 15px;
     width: 24px;
     height: 17px;
-    background: url('../../../images/decorative/tick.svg') no-repeat;
+    background: url("../../../images/decorative/tick.svg") no-repeat;
     opacity: 0;
   }
 }

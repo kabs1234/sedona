@@ -3,8 +3,8 @@
   margin-bottom: 32px;
   padding: 0;
   padding-top: 22px;
-  border-bottom: 1px solid #E5E5E5;
-  border-top: 1px solid #E5E5E5;
+  border-bottom: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
   list-style-type: none;
 
   @media (min-width: $tablet) {
@@ -27,7 +27,7 @@
   position: relative;
   padding: 0 20px;
   padding-bottom: 16px;
-  border-bottom: 1px solid #E5E5E5;
+  border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: $tablet) {
     padding: 0;
@@ -59,7 +59,7 @@
     display: grid;
     padding: 16px 20px;
     padding-right: 29px;
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
   }
 
   @media (min-width: $desktop) {
@@ -93,7 +93,7 @@
 .photo:nth-child(3) .photo__wrapper {
   @media (min-width: $tablet) {
     padding-right: 36px;
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
   }
 
   @media (min-width: $desktop) {
@@ -113,7 +113,7 @@
 
 .photo__name {
   margin: 0;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
@@ -131,7 +131,7 @@
 .photo__author {
   margin: 0;
   margin-bottom: 13px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -150,8 +150,8 @@
   position: relative;
   display: inline-block;
   padding-left: 37px;
-  background: transparent url('../../../images/decorative/like.svg') no-repeat 0 -1px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  background: transparent url("../../../images/decorative/like.svg") no-repeat 0 -1px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
@@ -167,6 +167,6 @@
 
   @media (min-width: $desktop) {
     color: $white;
-    background: transparent url('../../../images/decorative/like-white.svg') no-repeat;
+    background: transparent url("../../../images/decorative/like-white.svg") no-repeat;
   }
 }

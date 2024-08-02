@@ -28,30 +28,30 @@
   margin: 0 auto;
   margin-bottom: 36px;
   background:
-    url('../../../images/decorative/intro-triangle-tablet.svg') 50% bottom no-repeat,
-    url('../../../images/decorative/sedona-mobile.svg') 50% 52px no-repeat,
-    url('../../../images/decorative/background-mountains.jpg') 50% bottom/768px no-repeat;
+    url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat,
+    url("../../../images/decorative/sedona-mobile.svg") 50% 52px no-repeat,
+    url("../../../images/decorative/background-mountains.jpg") 50% bottom/768px no-repeat;
 
   @media (min-resolution: 2dppx) {
     background:
-    url('../../../images/decorative/intro-triangle-tablet.svg') 50% bottom no-repeat,
-    url('../../../images/decorative/sedona-mobile.svg') 50% 52px no-repeat,
-    url('../../../images/decorative/background-mountains@2x.jpg') 50% bottom / 768px no-repeat;
+      url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat,
+      url("../../../images/decorative/sedona-mobile.svg") 50% 52px no-repeat,
+      url("../../../images/decorative/background-mountains@2x.jpg") 50% bottom / 768px no-repeat;
   }
 
   @media (min-width: $tablet) {
     min-height: 291px;
     margin-bottom: 62px;
     background:
-    url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat,
-    url("../../../images/decorative/sedona-tablet.svg") 50% 95px no-repeat,
-    url("../../../images/decorative/background-mountains.jpg") 50% bottom no-repeat;
+      url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat,
+      url("../../../images/decorative/sedona-tablet.svg") 50% 95px no-repeat,
+      url("../../../images/decorative/background-mountains.jpg") 50% bottom no-repeat;
 
     @media (min-resolution: 2dppx) {
       background:
-      url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat,
-      url("../../../images/decorative/sedona-tablet.svg") 50% 95px no-repeat,
-      url("../../../images/decorative/background-mountains@2x.jpg") 50% bottom / 1200px no-repeat;
+        url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat,
+        url("../../../images/decorative/sedona-tablet.svg") 50% 95px no-repeat,
+        url("../../../images/decorative/background-mountains@2x.jpg") 50% bottom / 1200px no-repeat;
     }
   }
 
@@ -59,15 +59,15 @@
     min-height: 301px;
     margin-bottom: 114px;
     background:
-    url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat,
-    url("../../../images/decorative/text-sedona.svg") 50% 101px no-repeat,
-    url("../../../images/decorative/background-mountains.jpg") 50% -218px no-repeat;
+      url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat,
+      url("../../../images/decorative/text-sedona.svg") 50% 101px no-repeat,
+      url("../../../images/decorative/background-mountains.jpg") 50% -218px no-repeat;
 
     @media (min-resolution: 2dppx) {
       background:
-      url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat,
-      url("../../../images/decorative/text-sedona.svg") 50% 101px no-repeat,
-      url("../../../images/decorative/background-mountains@2x.jpg") 50% -218px / 1200px no-repeat;
+        url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat,
+        url("../../../images/decorative/text-sedona.svg") 50% 101px no-repeat,
+        url("../../../images/decorative/background-mountains@2x.jpg") 50% -218px / 1200px no-repeat;
     }
   }
 }
@@ -75,7 +75,7 @@
 .form-page__heading {
   margin: 0;
   margin-bottom: 29px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -91,8 +91,8 @@
 .form-page__description {
   margin: 0;
   padding-bottom: 16px;
-  border-bottom: 1px solid #E5E5E5;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  border-bottom: 1px solid #e5e5e5;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -137,7 +137,7 @@
       margin: 0 auto;
       width: 1px;
       height: 292px;
-      background-color: #DBDBDB;
+      background-color: #dbdbdb;
     }
   }
 
@@ -160,7 +160,7 @@
   padding: 18.5px 0 13.5px;
   border: none;
   background-color: $primary-color;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -184,7 +184,7 @@
 
   @media (min-width: $tablet) {
     display: inline;
-    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;

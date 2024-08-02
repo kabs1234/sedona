@@ -16,8 +16,8 @@
   @media (min-width: $tablet) {
     position: relative;
     margin-bottom: 55px;
-    padding: 0px 76px;
-    background-color: white;
+    padding: 0 76px;
+    background-color: $white;
     text-align: center;
     z-index: 0;
   }
@@ -28,9 +28,9 @@
   min-height: 160px;
   padding: 13px 23px 0 21px;
   border: none;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   display: block;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -43,11 +43,11 @@
   }
 
   &:hover {
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
   }
 
   &:focus {
-    outline: 4px solid #E5E5E5;
+    outline: 4px solid #e5e5e5;
     background-color: $white;
   }
 }
