@@ -11,3 +11,7 @@
     width: 1200px;
   }
 }
+
+.header:has(.nav__burger-menu--no-js) {
+  margin: 0;
+}

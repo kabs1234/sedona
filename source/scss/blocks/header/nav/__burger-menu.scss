@@ -20,6 +20,18 @@
   }
 }
 
+.nav__burger-menu--no-js .nav__list {
+  display: block;
+}
+
+.nav__burger-menu--no-js .nav__button {
+  display: none;
+}
+
+.nav__burger-menu--no-js .nav__main-link {
+  display: none;
+}
+
 .nav__burger-menu .nav__item:not(:first-child) .nav__link {
   box-shadow: 0px -1px 0px 0px #01010133, 0px 1px 0px 0px #FFFFFF33 inset;
 }
@@ -51,3 +63,4 @@
     color: rgba($color: $white, $alpha: 0.3);
   }
 }
+
