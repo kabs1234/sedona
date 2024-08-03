@@ -11,7 +11,7 @@
     padding-top: 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 256px 330px;
+    grid-template-rows: minmax(256px, max-content) minmax(330px, max-content);
     grid-column: 1/4;
   }
 }

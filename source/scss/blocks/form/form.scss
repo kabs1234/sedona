@@ -124,7 +124,7 @@
     margin-bottom: 51.5px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 292px 252px;
+    grid-template-rows: minmax(292px, 1fr);
     row-gap: 73px;
 
     &::before {

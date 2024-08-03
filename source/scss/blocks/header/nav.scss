@@ -21,11 +21,11 @@
 }
 
 .nav__button {
-  position: relative;
+  position: absolute;
+  top: 8px;
+  right: -8px;
   width: 40px;
   height: 40px;
-  margin: 8px 0;
-  margin-left: 66px;
   padding: 0;
   border: none;
   background-color: transparent;

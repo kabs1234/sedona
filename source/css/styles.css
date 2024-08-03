@@ -18,6 +18,11 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .page {
   background-color: #f2f2f2;
 }
@@ -104,11 +109,11 @@ body {
 }
 
 .nav__button {
-  position: relative;
+  position: absolute;
+  top: 8px;
+  right: -8px;
   width: 40px;
   height: 40px;
-  margin: 8px 0;
-  margin-left: 66px;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -271,11 +276,12 @@ body {
 
 .nav__menu .nav__item:nth-child(3) .nav__link {
   align-items: start;
+  height: 56px;
 }
 
 .nav__menu .nav__link {
   width: 120px;
-  height: 56px;
+  min-height: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -611,8 +617,9 @@ body {
 }
 @media (min-width: 768px) {
   .advantage__image {
+    max-width: 200%;
     width: 200%;
-    height: 256px;
+    height: 100%;
   }
 }
 
@@ -629,7 +636,7 @@ body {
     padding-top: 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 256px 330px;
+    grid-template-rows: minmax(256px, max-content) minmax(330px, max-content);
     grid-column: 1/4;
   }
 }
@@ -1576,7 +1583,7 @@ body {
     margin-bottom: 51.5px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 292px 252px;
+    grid-template-rows: minmax(292px, 1fr);
     row-gap: 73px;
   }
   .form__wrapper::before {
@@ -1819,6 +1826,7 @@ body {
 @media (min-width: 1200px) {
   .fieldset--contacts .fieldset__list {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -1995,6 +2003,10 @@ body {
   opacity: 1;
 }
 
+.fieldset--impression .field__input:focus-visible ~ .field__span {
+  outline: 2px solid #000;
+}
+
 @media (min-width: 768px) {
   .fieldset--visits {
     margin-bottom: 70px;
@@ -2113,6 +2125,10 @@ body {
   .fieldset--visits .fieldset__item:last-child .field__name {
     margin-left: 24px;
   }
+}
+
+.fieldset--visits .field__input:focus-visible ~ .field__span {
+  outline: 2px solid #000;
 }
 
 .fieldset--emotions {

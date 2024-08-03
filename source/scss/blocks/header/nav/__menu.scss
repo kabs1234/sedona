@@ -52,11 +52,12 @@
 
 .nav__menu .nav__item:nth-child(3) .nav__link {
   align-items: start;
+  height: 56px;
 }
 
 .nav__menu .nav__link {
   width: 120px;
-  height: 56px;
+  min-height: 56px;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -28,6 +28,7 @@
 .fieldset--contacts .fieldset__list {
   @media (min-width: $desktop) {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 

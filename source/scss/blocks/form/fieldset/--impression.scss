@@ -92,3 +92,7 @@
 .fieldset--impression .field__input:checked ~ .field__span::before {
   opacity: 1;
 }
+
+.fieldset--impression .field__input:focus-visible ~ .field__span {
+  outline: 2px solid #000;
+}
