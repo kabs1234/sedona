@@ -1,21 +1,30 @@
 {
-  "name": "Sedona",
+  "name": "sedona",
   "private": true,
-  "description": "Личный проект «{{projectTitle}}» от HTML Academy",
+  "description": "Личный проект",
   "devDependencies": {
     "autoprefixer": "10.4.0",
-    "browser-sync": "2.23.7",
+    "browser-sync": "^2.23.7",
+    "del": "^6.1.1",
     "gulp": "4.0.2",
     "gulp-dart-sass": "^1.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-svgstore": "^9.0.0",
+    "gulp-terser": "^2.1.0",
+    "gulp-webp": "^4.0.1",
     "postcss": "8.3.11",
+    "postcss-csso": "^6.0.1",
     "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "^0.1.11"
   },
   "scripts": {
     "stylelint": "stylelint \"./source/scss/**/*.scss\" --syntax scss",
-    "build": "gulp styles",
+    "build": "gulp build",
     "start": "gulp"
   },
   "browserslist": [

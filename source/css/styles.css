@@ -3,14 +3,14 @@
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: local("PT Sans"), local("PT Sans Regular"), url("../../fonts/PTSans-Regular.woff2") format(woff2), url("../../fonts/PTSans-Regular.woff") format(woff);
+  src: local("PT Sans"), local("PT Sans Regular"), url("../fonts/PTSans-Regular.woff2") format(woff2), url("../fonts/PTSans-Regular.woff") format(woff);
 }
 @font-face {
   font-family: "PT Sans";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: local("PT Sans"), local("PT Sans Bold"), url("../../fonts/PTSans-Bold.woff2") format(woff2), url("../../fonts/PTSans-Bold.woff") format(woff);
+  src: local("PT Sans"), local("PT Sans Bold"), url("../fonts/PTSans-Bold.woff2") format(woff2), url("../fonts/PTSans-Bold.woff") format(woff);
 }
 *,
 *::before,
@@ -329,23 +329,23 @@ img {
   min-height: 389px;
   margin: 0 auto;
   margin-bottom: 32px;
-  background: url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../../../images/decorative/text-index.svg") 50% 90px no-repeat, url("../../../images/decorative/background-mountains.jpg") 50% -36px no-repeat;
+  background: url("../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../images/decorative/text-index.svg") 50% 90px no-repeat, url("../images/decorative/background-mountains.jpg") 50% -36px no-repeat;
 }
 @media (min-resolution: 2dppx) {
   .main__promo {
-    background: url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../../../images/decorative/text-index.svg") 50% 90px no-repeat, url("../../../images/decorative/background-mountains@2x.jpg") 50% -36px/1200px no-repeat;
+    background: url("../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../images/decorative/text-index.svg") 50% 90px no-repeat, url("../images/decorative/background-mountains@2x.jpg") 50% -36px/1200px no-repeat;
   }
 }
 @media (min-width: 768px) {
   .main__promo {
     min-height: 518px;
     margin-bottom: 43.5px;
-    background: url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../../../images/decorative/text-index-tablet.svg") 50% 77px no-repeat, url("../../../images/decorative/background-mountains.jpg") 50% -1px no-repeat;
+    background: url("../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../images/decorative/text-index-tablet.svg") 50% 77px no-repeat, url("../images/decorative/background-mountains.jpg") 50% -1px no-repeat;
   }
 }
 @media (min-width: 768px) and (min-resolution: 2dppx) {
   .main__promo {
-    background: url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../../../images/decorative/text-index-tablet.svg") 50% 77px no-repeat, url("../../../images/decorative/background-mountains@2x.jpg") 50% -1px/1200px no-repeat;
+    background: url("../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../images/decorative/text-index-tablet.svg") 50% 77px no-repeat, url("../images/decorative/background-mountains@2x.jpg") 50% -1px/1200px no-repeat;
   }
 }
 @media (min-width: 1200px) {
@@ -368,18 +368,16 @@ img {
   .main__heading {
     font-size: 21px;
   }
+  .main__heading br:first-child {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .main__heading br:last-child {
+    display: none;
+  }
 }
 
-@media (max-width: 767px) {
-  .main__tablet {
-    display: none;
-  }
-}
-@media (min-width: 768px) {
-  .main__mobile {
-    display: none;
-  }
-}
 .main__description {
   margin: 0;
   margin-bottom: 27px;
@@ -667,7 +665,7 @@ img {
   width: 320px;
   height: 37px;
   margin: 0 auto;
-  background: url("../../../images/decorative/white-stripe.svg") no-repeat 50% -16px;
+  background: url("../images/decorative/white-stripe.svg") no-repeat 50% -16px;
 }
 @media (min-width: 768px) {
   .advantage:first-child .advantage__wrapper::before {
@@ -735,7 +733,7 @@ img {
   left: -48px;
   width: 39px;
   height: 37px;
-  background-image: url("../../../images/decorative/icon-house-mobile.svg");
+  background-image: url("../images/decorative/icon-house-mobile.svg");
 }
 @media (min-width: 768px) {
   .details__item:first-child {
@@ -748,7 +746,7 @@ img {
     margin: 0 auto;
     width: 75px;
     height: 72px;
-    background-image: url("../../../images/decorative/icon-house-tablet.svg");
+    background-image: url("../images/decorative/icon-house-tablet.svg");
   }
 }
 
@@ -757,7 +755,7 @@ img {
   left: -44px;
   width: 32px;
   height: 38px;
-  background-image: url("../../../images/decorative/icon-gift-mobile.svg");
+  background-image: url("../images/decorative/icon-gift-mobile.svg");
 }
 @media (min-width: 768px) {
   .details__item:nth-child(2) {
@@ -770,7 +768,7 @@ img {
     margin: 0 auto;
     width: 64px;
     height: 75px;
-    background-image: url("../../../images/decorative/icon-gift-tablet.svg");
+    background-image: url("../images/decorative/icon-gift-tablet.svg");
   }
 }
 
@@ -790,7 +788,7 @@ img {
   left: -51px;
   width: 40px;
   height: 35px;
-  background-image: url("../../../images/decorative/icon-burger-mobile.svg");
+  background-image: url("../images/decorative/icon-burger-mobile.svg");
 }
 @media (min-width: 768px) {
   .details__item:last-child {
@@ -805,7 +803,7 @@ img {
     margin: 0 auto;
     width: 76px;
     height: 68px;
-    background-image: url("../../../images/decorative/icon-burger-tablet.svg");
+    background-image: url("../images/decorative/icon-burger-tablet.svg");
   }
 }
 
@@ -963,35 +961,35 @@ img {
 .catalog__promo {
   min-height: 158px;
   margin-bottom: 32px;
-  background: url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../../../images/decorative/sedona-mobile.svg") 50% 52px no-repeat, url("../../../images/decorative/background-mountains.jpg") 50% bottom/768px no-repeat;
+  background: url("../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../images/decorative/sedona-mobile.svg") 50% 52px no-repeat, url("../images/decorative/background-mountains.jpg") 50% bottom/768px no-repeat;
 }
 @media (min-resolution: 2dppx) {
   .catalog__promo {
-    background: url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../../../images/decorative/sedona-mobile.svg") 50% 52px no-repeat, url("../../../images/decorative/background-mountains@2x.jpg") 50% bottom/768px no-repeat;
+    background: url("../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../images/decorative/sedona-mobile.svg") 50% 52px no-repeat, url("../images/decorative/background-mountains@2x.jpg") 50% bottom/768px no-repeat;
   }
 }
 @media (min-width: 768px) {
   .catalog__promo {
     min-height: 291px;
     margin-bottom: 62px;
-    background: url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../../../images/decorative/sedona-tablet.svg") 50% 95px no-repeat, url("../../../images/decorative/background-mountains.jpg") 50% bottom no-repeat;
+    background: url("../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../images/decorative/sedona-tablet.svg") 50% 95px no-repeat, url("../images/decorative/background-mountains.jpg") 50% bottom no-repeat;
   }
 }
 @media (min-width: 768px) and (min-resolution: 2dppx) {
   .catalog__promo {
-    background: url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../../../images/decorative/sedona-tablet.svg") 50% 95px no-repeat, url("../../../images/decorative/background-mountains@2x.jpg") 50% bottom/1200px no-repeat;
+    background: url("../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../images/decorative/sedona-tablet.svg") 50% 95px no-repeat, url("../images/decorative/background-mountains@2x.jpg") 50% bottom/1200px no-repeat;
   }
 }
 @media (min-width: 1200px) {
   .catalog__promo {
     min-height: 301px;
     margin-bottom: 102px;
-    background: url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../../../images/decorative/text-sedona.svg") 50% 101px no-repeat, url("../../../images/decorative/background-mountains.jpg") 50% -218px no-repeat;
+    background: url("../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../images/decorative/text-sedona.svg") 50% 101px no-repeat, url("../images/decorative/background-mountains.jpg") 50% -218px no-repeat;
   }
 }
 @media (min-width: 1200px) and (min-resolution: 2dppx) {
   .catalog__promo {
-    background: url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../../../images/decorative/text-sedona.svg") 50% 101px no-repeat, url("../../../images/decorative/background-mountains@2x.jpg") 50% -218px/1200px no-repeat;
+    background: url("../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../images/decorative/text-sedona.svg") 50% 101px no-repeat, url("../images/decorative/background-mountains@2x.jpg") 50% -218px/1200px no-repeat;
   }
 }
 
@@ -1219,7 +1217,7 @@ img {
   position: relative;
   display: inline-block;
   padding-left: 37px;
-  background: transparent url("../../../images/decorative/like.svg") no-repeat 0 -1px;
+  background: transparent url("../images/decorative/like.svg") no-repeat 0 -1px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -1238,7 +1236,7 @@ img {
 @media (min-width: 1200px) {
   .photo__likes {
     color: #ffffff;
-    background: transparent url("../../../images/decorative/like-white.svg") no-repeat;
+    background: transparent url("../images/decorative/like-white.svg") no-repeat;
   }
 }
 
@@ -1466,15 +1464,15 @@ img {
 }
 
 .player__desktop .player__button--replay {
-  background: url("../../../../images/decorative/replay.svg") center no-repeat;
+  background: url("../images/decorative/replay.svg") center no-repeat;
 }
 
 .player__desktop .player__button--subtitles {
-  background: url("../../../../images/decorative/subtitles.svg") center no-repeat;
+  background: url("../images/decorative/subtitles.svg") center no-repeat;
 }
 
 .player__desktop .player__button--fullscreen {
-  background: url("../../../../images/decorative/fullscreen.svg") 10px center no-repeat;
+  background: url("../images/decorative/fullscreen.svg") 10px center no-repeat;
 }
 
 .player__desktop .player__time {
@@ -1512,35 +1510,35 @@ img {
   min-height: 158px;
   margin: 0 auto;
   margin-bottom: 36px;
-  background: url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../../../images/decorative/sedona-mobile.svg") 50% 52px no-repeat, url("../../../images/decorative/background-mountains.jpg") 50% bottom/768px no-repeat;
+  background: url("../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../images/decorative/sedona-mobile.svg") 50% 52px no-repeat, url("../images/decorative/background-mountains.jpg") 50% bottom/768px no-repeat;
 }
 @media (min-resolution: 2dppx) {
   .form-page__promo {
-    background: url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../../../images/decorative/sedona-mobile.svg") 50% 52px no-repeat, url("../../../images/decorative/background-mountains@2x.jpg") 50% bottom/768px no-repeat;
+    background: url("../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../images/decorative/sedona-mobile.svg") 50% 52px no-repeat, url("../images/decorative/background-mountains@2x.jpg") 50% bottom/768px no-repeat;
   }
 }
 @media (min-width: 768px) {
   .form-page__promo {
     min-height: 291px;
     margin-bottom: 62px;
-    background: url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../../../images/decorative/sedona-tablet.svg") 50% 95px no-repeat, url("../../../images/decorative/background-mountains.jpg") 50% bottom no-repeat;
+    background: url("../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../images/decorative/sedona-tablet.svg") 50% 95px no-repeat, url("../images/decorative/background-mountains.jpg") 50% bottom no-repeat;
   }
 }
 @media (min-width: 768px) and (min-resolution: 2dppx) {
   .form-page__promo {
-    background: url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../../../images/decorative/sedona-tablet.svg") 50% 95px no-repeat, url("../../../images/decorative/background-mountains@2x.jpg") 50% bottom/1200px no-repeat;
+    background: url("../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../images/decorative/sedona-tablet.svg") 50% 95px no-repeat, url("../images/decorative/background-mountains@2x.jpg") 50% bottom/1200px no-repeat;
   }
 }
 @media (min-width: 1200px) {
   .form-page__promo {
     min-height: 301px;
     margin-bottom: 114px;
-    background: url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../../../images/decorative/text-sedona.svg") 50% 101px no-repeat, url("../../../images/decorative/background-mountains.jpg") 50% -218px no-repeat;
+    background: url("../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../images/decorative/text-sedona.svg") 50% 101px no-repeat, url("../images/decorative/background-mountains.jpg") 50% -218px no-repeat;
   }
 }
 @media (min-width: 1200px) and (min-resolution: 2dppx) {
   .form-page__promo {
-    background: url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../../../images/decorative/text-sedona.svg") 50% 101px no-repeat, url("../../../images/decorative/background-mountains@2x.jpg") 50% -218px/1200px no-repeat;
+    background: url("../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat, url("../images/decorative/text-sedona.svg") 50% 101px no-repeat, url("../images/decorative/background-mountains@2x.jpg") 50% -218px/1200px no-repeat;
   }
 }
 
@@ -1915,11 +1913,11 @@ img {
 }
 
 .fieldset--contacts .fieldset__item:first-child .fieldset__wrapper::after {
-  background-image: url("../../../images/decorative/phone.svg");
+  background-image: url("../images/decorative/phone.svg");
 }
 
 .fieldset--contacts .fieldset__item:nth-child(2) .fieldset__wrapper::after {
-  background-image: url("../../../images/decorative/mail.svg");
+  background-image: url("../images/decorative/mail.svg");
 }
 
 .fieldset--contacts .field {
@@ -2157,7 +2155,7 @@ img {
   right: 15px;
   width: 24px;
   height: 17px;
-  background: url("../../../images/decorative/tick.svg") no-repeat;
+  background: url("../images/decorative/tick.svg") no-repeat;
   opacity: 0;
 }
 

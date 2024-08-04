@@ -11,30 +11,30 @@
   margin: 0 auto;
   margin-bottom: 32px;
   background:
-    url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat,
-    url("../../../images/decorative/text-index.svg") 50% 90px no-repeat,
-    url("../../../images/decorative/background-mountains.jpg") 50% -36px no-repeat;
+    url("../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat,
+    url("../images/decorative/text-index.svg") 50% 90px no-repeat,
+    url("../images/decorative/background-mountains.jpg") 50% -36px no-repeat;
 
   @media (min-resolution: 2dppx) {
     background:
-      url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat,
-      url("../../../images/decorative/text-index.svg") 50% 90px no-repeat,
-      url("../../../images/decorative/background-mountains@2x.jpg") 50% -36px / 1200px no-repeat;
+      url("../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat,
+      url("../images/decorative/text-index.svg") 50% 90px no-repeat,
+      url("../images/decorative/background-mountains@2x.jpg") 50% -36px / 1200px no-repeat;
   }
 
   @media (min-width: $tablet) {
     min-height: 518px;
     margin-bottom: 43.5px;
     background:
-      url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat,
-      url("../../../images/decorative/text-index-tablet.svg") 50% 77px no-repeat,
-      url("../../../images/decorative/background-mountains.jpg") 50% -1px no-repeat;
+      url("../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat,
+      url("../images/decorative/text-index-tablet.svg") 50% 77px no-repeat,
+      url("../images/decorative/background-mountains.jpg") 50% -1px no-repeat;
 
     @media (min-resolution: 2dppx) {
       background:
-        url("../../../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat,
-        url("../../../images/decorative/text-index-tablet.svg") 50% 77px no-repeat,
-        url("../../../images/decorative/background-mountains@2x.jpg") 50% -1px / 1200px no-repeat;
+        url("../images/decorative/intro-triangle-tablet.svg") 50% bottom no-repeat,
+        url("../images/decorative/text-index-tablet.svg") 50% 77px no-repeat,
+        url("../images/decorative/background-mountains@2x.jpg") 50% -1px / 1200px no-repeat;
     }
   }
 
@@ -55,18 +55,16 @@
 
   @media (min-width: $tablet) {
     font-size: 21px;
-  }
-}
 
-@media (max-width: 767px) {
-  .main__tablet {
-    display: none;
+    br:first-child {
+      display: none;
+    }
   }
-}
 
-@media (min-width: $tablet) {
-  .main__mobile {
-    display: none;
+  @media (max-width: 767px) {
+    br:last-child {
+      display: none;
+    }
   }
 }
 

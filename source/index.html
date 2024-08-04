@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sedona</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="./images/favicons/apple-icon-180x180.png">
+    <link rel="preload" href="../fonts/PTSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/PTSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
   </head>
   <body class="page-body">
     <header class="header">
@@ -71,7 +73,7 @@
     <main class="page-body__main main">
       <div class="main__promo"></div>
 
-      <h1 class="main__heading">СЕДОНА — небольшой<br class="main__mobile"> городок в АРИЗОНЕ,<br class="main__tablet"> заслуживающий большего!</h1>
+      <h1 class="main__heading">СЕДОНА — небольшой <br>городок в АРИЗОНЕ,<br> заслуживающий большего!</h1>
       <p class="main__description">Рассмотрим 5 причин, по которым<br> Седона круче, чем гранд каньон!</p>
 
       <section class="advantages">
@@ -83,6 +85,10 @@
               <p class="advantage__description">Cедона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="./images/content/index/photo-city-desktop@1x.webp 1x, ./images/content/index/photo-city-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/webp" srcset="./images/content/index/photo-city-tablet@1x.webp 1x, ./images/content/index/photo-city-tablet@2x.webp 2x">
+              <source type="image/webp" src="./images/content/index/photo-city-mobile@1x.webp" width="320" height="260" alt="Фото города" srcset="./images/content/index/photo-city-mobile@2x.webp 2x">
+
               <source media="(min-width: 1200px)" srcset="./images/content/index/photo-city-desktop@1x.jpg 1x, ./images/content/index/photo-city-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="./images/content/index/photo-city-tablet@1x.jpg 1x, ./images/content/index/photo-city-tablet@2x.jpg 2x">
               <img class="advantage__image" src="./images/content/index/photo-city-mobile@1x.jpg" width="320" height="260" alt="Фото города" srcset="./images/content/index/photo-city-mobile@2x.jpg 2x">
@@ -111,6 +117,10 @@
               <p class="advantage__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="./images/content/index/photo-bridge-desktop@1x.webp 1x, ./images/content/index/photo-bridge-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/webp" srcset="./images/content/index/photo-bridge-tablet@1x.webp 1x, ./images/content/index/photo-bridge-tablet@2x.webp 2x">
+              <source type="image/webp" src="./images/content/index/photo-bridge-mobile@1x.webp" srcset="./images/content/index/photo-bridge-mobile@2x.webp 2x" width="320" height="260" alt="Фото моста">
+
               <source media="(min-width: 1200px)" srcset="./images/content/index/photo-bridge-desktop@1x.jpg 1x, ./images/content/index/photo-bridge-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="./images/content/index/photo-bridge-tablet@1x.jpg 1x, ./images/content/index/photo-bridge-tablet@2x.jpg 2x">
               <img class="advantage__image" src="./images/content/index/photo-bridge-mobile@1x.jpg" srcset="./images/content/index/photo-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Фото моста">
@@ -182,6 +192,6 @@
         </svg>
       </a>
     </footer>
-    <script src="./js/app.js"></script>
+    <script src="./js/app.min.js"></script>
   </body>
 </html>

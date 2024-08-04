@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalog</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="./images/favicons/apple-icon-180x180.png">
+    <link rel="preload" href="../fonts/PTSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/PTSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
   </head>
   <body class="page-body">
     <header class="header">
@@ -76,6 +78,10 @@
       <ul class="photos catalog__photos">
         <li class="photo">
           <picture>
+            <source media="(min-width: 1200px)" type="image/webp" srcset="./images/content/catalog/photo-1-desktop@1x.webp 1x, ./images/content/catalog/photo-1-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" type="image/webp" srcset="./images/content/catalog/photo-1-tablet@1x.webp 1x, ./images/content/catalog/photo-1-tablet@2x.webp 2x">
+            <source type="image/webp" src="./images/content/catalog/photo-1-mobile@1x.webp" srcset="./images/content/catalog/photo-1-mobile@2x.webp 2x">
+
             <source media="(min-width: 1200px)" srcset="./images/content/catalog/photo-1-desktop@1x.jpg 1x, ./images/content/catalog/photo-1-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="./images/content/catalog/photo-1-tablet@1x.jpg 1x, ./images/content/catalog/photo-1-tablet@2x.jpg 2x">
             <img class="photo__image" src="./images/content/catalog/photo-1-mobile@1x.jpg" srcset="./images/content/catalog/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="">
@@ -89,6 +95,10 @@
         </li>
         <li class="photo">
           <picture>
+            <source media="(min-width: 1200px)" type="image/webp" srcset="./images/content/catalog/photo-2-desktop@1x.webp 1x, ./images/content/catalog/photo-2-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" type="image/webp" srcset="./images/content/catalog/photo-2-tablet@1x.webp 1x, ./images/content/catalog/photo-2-tablet@2x.webp 2x">
+            <source type="image/webp" src="./images/content/catalog/photo-2-mobile@1x.webp" srcset="./images/content/catalog/photo-2-mobile@2x.webp 2x">
+
             <source media="(min-width: 1200px)" srcset="./images/content/catalog/photo-2-desktop@1x.jpg 1x, ./images/content/catalog/photo-2-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="./images/content/catalog/photo-2-tablet@1x.jpg 1x, ./images/content/catalog/photo-2-tablet@2x.jpg 2x">
             <img class="photo__image" src="./images/content/catalog/photo-2-mobile@1x.jpg" srcset="./images/content/catalog/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="">
@@ -102,6 +112,10 @@
         </li>
         <li class="photo">
           <picture>
+            <source media="(min-width: 1200px)" type="image/webp" srcset="./images/content/catalog/photo-3-desktop@1x.webp 1x, ./images/content/catalog/photo-3-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" type="image/webp" srcset="./images/content/catalog/photo-3-tablet@1x.webp 1x, ./images/content/catalog/photo-3-tablet@2x.webp 2x">
+            <source type="image/webp" src="./images/content/catalog/photo-3-mobile@1x.webp" srcset="./images/content/catalog/photo-3-mobile@2x.webp 2x">
+
             <source media="(min-width: 1200px)" srcset="./images/content/catalog/photo-3-desktop@1x.jpg 1x, ./images/content/catalog/photo-3-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="./images/content/catalog/photo-3-tablet@1x.jpg 1x, ./images/content/catalog/photo-3-tablet@2x.jpg 2x">
             <img class="photo__image" src="./images/content/catalog/photo-3-mobile@1x.jpg" srcset="./images/content/catalog/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="">
@@ -115,6 +129,10 @@
         </li>
         <li class="photo">
           <picture>
+            <source media="(min-width: 1200px)" type="image/webp" srcset="./images/content/catalog/photo-4-desktop@1x.webp 1x, ./images/content/catalog/photo-4-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" type="image/webp" srcset="./images/content/catalog/photo-4-tablet@1x.webp 1x, ./images/content/catalog/photo-4-tablet@2x.webp 2x">
+            <source type="image/webp" src="./images/content/catalog/photo-4-mobile@1x.webp" srcset="./images/content/catalog/photo-4-mobile@2x.webp 2x">
+
             <source media="(min-width: 1200px)" srcset="./images/content/catalog/photo-4-desktop@1x.jpg 1x, ./images/content/catalog/photo-4-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="./images/content/catalog/photo-4-tablet@1x.jpg 1x, ./images/content/catalog/photo-4-tablet@2x.jpg 2x">
             <img class="photo__image" src="./images/content/catalog/photo-4-mobile@1x.jpg" srcset="./images/content/catalog/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="">
@@ -134,6 +152,10 @@
         <div class="video__player player">
 
           <picture>
+            <source media="(min-width: 1200px)" type="image/webp" srcset="./images/content/catalog/video-desktop.webp">
+            <source media="(min-width: 768px)" type="image/webp" srcset="./images/content/catalog/video-tablet.webp">
+            <source type="image/webp" src="./images/content/catalog/video-mobile.webp">
+
             <source media="(min-width: 1200px)" srcset="./images/content/catalog/video-desktop.jpg">
             <source media="(min-width: 768px)" srcset="./images/content/catalog/video-tablet.jpg">
             <img class="player__img" src="./images/content/catalog/video-mobile.jpg" width="320" height="201" alt="">
@@ -234,6 +256,6 @@
       </a>
     </footer>
 
-    <script src="./js/app.js"></script>
+    <script src="./js/app.min.js"></script>
   </body>
 </html>
