@@ -2053,7 +2053,7 @@ img {
 }
 
 .fieldset--impression .field__input:focus-visible ~ .field__span {
-  outline: 2px solid #000;
+  outline: 2px solid #000000;
 }
 
 @media (min-width: 768px) {
@@ -2177,7 +2177,7 @@ img {
 }
 
 .fieldset--visits .field__input:focus-visible ~ .field__span {
-  outline: 2px solid #000;
+  outline: 2px solid #000000;
 }
 
 .fieldset--emotions {
