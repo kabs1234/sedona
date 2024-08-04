@@ -3,8 +3,6 @@
   bottom: 0;
   width: 100%;
   height: 93px;
-  padding-left: 27px;
-  padding-right: 41px;
   display: none;
   background-color: rgba($color: $black, $alpha: 0.6);
 
@@ -24,10 +22,22 @@
   }
 }
 
+.player__desktop .player__button--replay {
+  background: url('../../../../images/decorative/replay.svg') center no-repeat;
+}
+
+.player__desktop .player__button--subtitles {
+  background: url('../../../../images/decorative/subtitles.svg') center no-repeat;
+}
+
+.player__desktop .player__button--fullscreen {
+  background: url('../../../../images/decorative/fullscreen.svg')  10px center no-repeat;
+}
+
 .player__desktop .player__time {
   position: relative;
   display: flex;
-  margin-right: 36px;
+  margin-right: 38px;
 }
 
 .player__desktop .player__bar {

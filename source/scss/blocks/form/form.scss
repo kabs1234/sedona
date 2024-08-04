@@ -1,21 +1,4 @@
-.form {
-  position: relative;
-  width: 280px;
-  margin: 20px auto 48px;
-
-  @media (min-width: $tablet) {
-    width: 648px;
-    margin-top: 0;
-    margin-bottom: 61px;
-  }
-
-  @media (min-width: $desktop) {
-    width: 960px;
-    margin-bottom: 66px;
-  }
-}
-
-.form-page {
+.page-body__form-page {
   margin-top: -28px;
 
   @media (min-width: $tablet) {
@@ -115,6 +98,32 @@
     br {
       display: inline;
     }
+  }
+}
+
+.form {
+  position: relative;
+  width: 280px;
+
+  @media (min-width: $tablet) {
+    width: 648px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 960px;
+  }
+}
+
+.form-page__form {
+  margin: 20px auto 48px;
+
+  @media (min-width: $tablet) {
+    margin-top: 0;
+    margin-bottom: 61px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 66px;
   }
 }
 

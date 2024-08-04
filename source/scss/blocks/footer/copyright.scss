@@ -8,7 +8,9 @@
   line-height: 26px;
   text-align: center;
   text-decoration: none;
+}
 
+.footer__copyright {
   @media (min-width: $tablet) {
     margin-right: 30px;
   }

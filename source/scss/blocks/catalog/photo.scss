@@ -1,6 +1,5 @@
 .photos {
   margin: 0;
-  margin-bottom: 32px;
   padding: 0;
   padding-top: 22px;
   border-bottom: 1px solid #e5e5e5;
@@ -8,18 +7,28 @@
   list-style-type: none;
 
   @media (min-width: $tablet) {
-    margin: 0 60px;
-    margin-bottom: 59px;
     border: none;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: $desktop) {
-    margin: 0 auto;
-    margin-bottom: 63px;
     grid-template-columns: repeat(3, 1fr);
     max-width: 1200px;
+  }
+}
+
+.catalog__photos {
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet) {
+    margin: 0 60px;
+    margin-bottom: 59px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 auto;
+    margin-bottom: 63px;
   }
 }
 
@@ -72,7 +81,6 @@
 
 .photo .photo__image {
   @media (min-width: $tablet) {
-    // min-width: 324px;
     height: 267px;
     margin: 0;
   }

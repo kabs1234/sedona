@@ -1,7 +1,6 @@
 .fieldset {
   position: relative;
   margin: 0;
-  margin-bottom: 46px;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -17,11 +16,17 @@
   }
 
   @media (min-width: $tablet) {
-    margin-bottom: 0;
-
     &::after {
       content: none;
     }
+  }
+}
+
+.form__fieldset {
+  margin-bottom: 46px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
   }
 }
 
