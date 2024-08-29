@@ -79,6 +79,10 @@
   }
 }
 
+.photo__fulscreen-photo {
+  display: block;
+}
+
 .photo .photo__image {
   @media (min-width: $tablet) {
     height: 267px;
